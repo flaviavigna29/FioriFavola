@@ -1,0 +1,18 @@
+.search_newsletter .btn_newsletter {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search_newsletter:focus {
+    color: black;
+    background-color: #fff;
+    border-color: var(--light-color);
+    outline: 0;
+    box-shadow: 0 0 0 .1rem var(--light-color);
+}
+
+.btn_newsletter:hover {
+    background-color: var(--light-color);
+    color: var(--bottle-color);
+    text-transform: uppercase;
+    transition: 0.3s;
+}

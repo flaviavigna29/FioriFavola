@@ -1,0 +1,54 @@
+/* PAGINA STORIA */
+.header_history {
+    margin-top: 110px;
+    background-image: url(../../public/media/ourhistory/5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.title_history {
+    font-size: 100px;
+}
+
+.bg_history_1 {
+    background-image: url(../../public/media/ourhistory/1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.bg_history_2 {
+    background-image: url(../../public/media/ourhistory/2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.bg_history_3 {
+    background-image: url(../../public/media/ourhistory/3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.bg_history_4 {
+    background-image: url(../../public/media/ourhistory/6.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+@media screen and (max-width:992px) {
+    .bg_history_1, .bg_history_2, .bg_history_3, .bg_history_4 {
+        height: 35vh;
+    }
+    .title_history {
+        font-size: 80px;
+    }
+}

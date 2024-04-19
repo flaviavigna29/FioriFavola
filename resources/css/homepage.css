@@ -1,0 +1,97 @@
+/* Header */
+.header_home {
+    background-image: url(../../public/media/assets/header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header_position {
+    top: 40%;
+}
+
+/* Citazione */
+.bg_cit {
+    background-image: none;
+}
+
+/* Categorie */
+.card_categories {
+    width: 80%;
+    border: none;
+    border-radius: 25px;
+}
+
+.bg_categories {
+    background-image: url(../../public/media/categorie/5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Card */
+.swiper-slide {
+    /* Stile generale delle slide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    /* Stile delle immagini all'interno delle slide */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .cardArticles .card-body {
+    /* Stili per il corpo della card */
+    padding: 20px;
+}
+
+/* Informazioni */
+.icons_ {
+    width: 70px;
+    height: 70px;
+}
+
+/* Stili per la sezione storia */
+.bg_history {
+    background-image: url(../../public/media/ourhistory/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+
+.hover_history {
+    color: white;
+}
+
+.hover_history:hover {
+    color: var(--light-color);
+    transition: 0.5s;
+    font-size: 110%;
+}
+
+/* Stili per il box dei numeri */
+.box-numbers {
+    background-image: url(../../public/media/assets/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width:992px) {
+    .header_home {
+        height: 85vh;
+    }
+
+    .bg_history {
+
+        height: 50vh;
+    }
+}

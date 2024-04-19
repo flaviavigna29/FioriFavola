@@ -1,0 +1,15 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+@import '../../node_modules/bootstrap-icons';
+
+@import 'catalog.css';
+
+@import 'contacts.css';
+
+@import 'history.css';
+
+@import 'homepage.css';
+
+@import 'newsletter.css';
+
+@import 'style.css';

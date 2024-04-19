@@ -1,0 +1,50 @@
+/* PAGINA CONTATTI */
+.block_contacts {
+    margin-top: 120px;
+}
+
+.bordo_contacts {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: var(--purple-color) solid 2px;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+.form-control2 {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid var(--lilac-color);
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control2:focus {
+    color: var(--lilac-color);
+    background-color: #fff;
+    border-color: var(--lilac-color);
+    outline: 0;
+    box-shadow: 0 0 0 .2rem var(--lilac-color);
+}
+
+.button_contacts {
+    background-image: linear-gradient(45deg, hsla(229, 33%, 71%, 0.5), hsla(231, 30%, 56%, 0.8), hsla(229, 33%, 71%, 0.8), white);
+}
+
+.button_contacts:hover {
+    transition: 0.5s;
+    font-size: 110%;
+    font-weight: bolder;
+}
+
+.mappa {
+    height: 100%;
+    width: 100%;
+    border: var(--purple-color) solid 2px;
+    border-radius: 5%;
+}
