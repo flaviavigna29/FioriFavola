@@ -33,6 +33,10 @@
 }
 
 /*? STILI RIUTILIZZABILI */
+.display_ {
+    margin-top: 110px;
+}
+
 /* Immagini con ombra e bordo arrotondato */
 .img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -146,7 +150,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
-.nav-link:hover {
+.hover:hover {
     color: var(--bottle-color);
     border-top: none;
     border-bottom: none;
@@ -196,6 +200,7 @@
         border-radius: 25px;
     }
 }
+
 /* schermi grandi */
 @media screen and (min-width:1200px) {
 

@@ -2,6 +2,10 @@
     {{-- ! Header  --}}
     <header class="container-fluid position-relative header_home">
         <div class="row justify-content-center">
+            <x-display-errors />
+        </div>
+
+        <div class="row justify-content-center">
             <div class="col-12 col-md-8 position-absolute header_position">
                 <p class="display-5 text-center font-tit tx-bottle text_shadow mb-4" data-aos="fade-up"
                     data-aos-delay="200" data-aos-duration="1000">In cerca della pianta perfetta?</p>
@@ -35,8 +39,8 @@
             </div>
         </div>
 
-        <div class="row justify-content-between align-items-center bg_categories" data-aos="zoom-in" data-aos-delay="400"
-            data-aos-duration="900">
+        <div class="row justify-content-between align-items-center bg_categories" data-aos="zoom-in"
+            data-aos-delay="400" data-aos-duration="900">
 
             <div class="col-6 col-lg-5 my-2">
                 <a href="#" class="justify-content-center align-items-center d-flex flex-column mx-auto">
@@ -45,11 +49,11 @@
                         <div class="card-img-overlay text-center">
                             <div class="col_shadow py-0 py-md-3">
                                 <h5 class="card-title fw-bold">Cura e difesa</h5>
-                                    <p class="card-text d-none d-md-block">
-                                        Hai bisogno di un equipaggiamento completo e di qualità per difendere e curare
-                                        gli ambienti e le piante di casa? Niente paura… sei nel posto giusto! Scopri
-                                        tutti i prodotti che abbiamo testato e selezionato per te e che ti renderanno
-                                        vincente!</p>
+                                <p class="card-text d-none d-md-block">
+                                    Hai bisogno di un equipaggiamento completo e di qualità per difendere e curare
+                                    gli ambienti e le piante di casa? Niente paura… sei nel posto giusto! Scopri
+                                    tutti i prodotti che abbiamo testato e selezionato per te e che ti renderanno
+                                    vincente!</p>
                             </div>
                         </div>
                     </div>
@@ -63,10 +67,10 @@
                         <div class="card-img-overlay text-center">
                             <div class="col_shadow py-0 py-md-3">
                                 <h5 class="card-title fw-bold">Bellezza vitale</h5>
-                                    <p class="card-text d-none d-md-block">
-                                        In questa categoria trovi tutto ciò che serve alle tue piante per crescere forti
-                                        e vigorose... Parliamo di concimi e fitostimolanti!
-                                    </p>
+                                <p class="card-text d-none d-md-block">
+                                    In questa categoria trovi tutto ciò che serve alle tue piante per crescere forti
+                                    e vigorose... Parliamo di concimi e fitostimolanti!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -80,10 +84,10 @@
                         <div class="card-img-overlay text-center">
                             <div class="col_shadow py-0 py-md-3">
                                 <h5 class="card-title fw-bold">Terricci e substrati</h5>
-                                    <p class="card-text d-none d-md-block">
-                                        In questa categoria trovi tutti i terricci, substrati e torbe professionali di
-                                        nostra produzione, prodotti finiti e pronti all’uso di altissima qualità, adatti
-                                        a tutte le piante che trovi sul nostro shop!.</p>
+                                <p class="card-text d-none d-md-block">
+                                    In questa categoria trovi tutti i terricci, substrati e torbe professionali di
+                                    nostra produzione, prodotti finiti e pronti all’uso di altissima qualità, adatti
+                                    a tutte le piante che trovi sul nostro shop!.</p>
                             </div>
                         </div>
                     </div>
@@ -209,7 +213,7 @@
     </section> --}}
 
     {{-- ! Sezione Newsletter --}}
-    <x-newsletter/>
+    <x-newsletter />
 
     {{-- ! Sezione Recensioni --}}
 

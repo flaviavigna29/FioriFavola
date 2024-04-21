@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\ContactRequest;
 
 class ContactController extends Controller
 {
@@ -13,7 +14,7 @@ class ContactController extends Controller
         return view('contacts');
     }
 
-    public function submit(Request $request)
+    public function submit(ContactRequest $request)
     {
         // dd($request->all());
         $name = $request->input('name');
@@ -23,6 +24,6 @@ class ContactController extends Controller
 
         Mail::to($email)->send(new ContactMail($name, $surname, $email, $message));
 
-        return redirect()->route('contatti')->with('mailInviata', 'mail inviata con successo, sarai ricontattato al più presto');
+        return redirect()->route('contatti')->with('message', "E-mail inviata con successo, $name $surname sarai ricontattato al più presto");
     }
 }

@@ -8,11 +8,11 @@
                     stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
             <h3 class="text-white fw-bold mb-5">Registrati alla nostra Newsletter!</h3>
-            <div class="my-3 d-flex">
-                <input type="email" class="form-control py-3 mx-2 bg-transparent search_newsletter" id="exampleFormControlInput1"
+            <form method="POST" action="{{route('welcome.store')}}" class="my-3 d-flex">
+                <input type="email" name="email" class="form-control py-3 mx-2 bg-transparent search_newsletter" id="email" value="{{old('email')}}"
                     placeholder="Inserisci la tua e-mail">
                 <button class="btn btn-outline-light py-3 fw-bold mx-2 btn_newsletter"><small>Invia</small></button>
-            </div>
+            </form>
             <div class="mt-4 text-center">
                 <p><small>Rimani aggiornato sui nuovi prodotti e le nuove offerte.</small></p>
             </div>
