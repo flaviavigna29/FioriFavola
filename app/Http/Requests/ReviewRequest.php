@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ContactRequest extends FormRequest
+class ReviewRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,19 +23,19 @@ class ContactRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'surname' => 'required',
-            'email' => 'required',
-            'message' => 'required | max:255', 
+            'message' => 'required', 
+            'body' => 'required | max:255',
+            'gender' => 'required',
         ];
     }
     public function messages()
     {
         return [
             'name.required' => 'inserisci il tuo nome',
-            'surname.required' => 'inserisci il tuo cognome',
-            'email.required' => 'inserisci la tua mail',
-            'message.required' => 'inserisci il tuo messaggio',
-            'message.max' => 'hai un massimo di 255 caratteri',
+            'message.required' => 'inserisci una breve descrizione per la recensione',
+            'body.required' => 'inserisci il tuo messaggio',
+            'body.max' => 'il contenuto della recensione può contenere un massimo di 255 caratteri',
+            'gender' => 'scegli fra uno dei due generi'
         ];
     }
 }

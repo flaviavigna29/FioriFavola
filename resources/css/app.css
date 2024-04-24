@@ -1,6 +1,6 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-@import '../../node_modules/bootstrap-icons';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 
 @import 'catalog.css';
 
@@ -12,4 +12,229 @@
 
 @import 'newsletter.css';
 
-@import 'style.css';
+@import 'review.css';
+
+
+
+
+/*? STILI PRINCIPALI */
+* {
+    font-family: "Roboto Serif", serif;
+}
+
+/* Variabili per i colori */
+:root {
+    --light-color: #66b100;
+    --bottle-color: #027800;
+    --green-color: #003d0099;
+}
+
+/* Testo principale */
+.font-tit {
+    font-family: "Autour One", system-ui;
+}
+
+/* Testo corsivo */
+.font-cit {
+    font-family: "Great Vibes", cursive;
+}
+
+/* Testo colorato di verde */
+.tx-bottle {
+    color: var(--bottle-color);
+}
+
+/* Testo colorato di viola */
+
+
+/*? STILI RIUTILIZZABILI */
+/* Stile per i messaggi all'utente */
+.display_ {
+    margin-top: 110px;
+}
+
+/* Immagini con ombra e bordo arrotondato */
+.img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+}
+
+/* Impostazione dello sfondo delle foglie */
+.sfondo {
+    background-image: url(../../public/media/assets/sfondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Impostazione del search */
+.search_ {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: var(--bottle-color) 2px solid;
+}
+
+.search_:focus {
+    color: black;
+    background-color: #fff;
+    border-color: var(--light-color);
+    outline: 0;
+    box-shadow: 0 0 0 .1rem var(--light-color);
+}
+
+/* Pulsante di dimensioni ridotte */
+.button_ {
+    border: 2px var(--bottle-color) solid;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-style: italic;
+    font-size: small;
+    padding: 3px 4px;
+}
+
+.button_:hover {
+    background-color: var(--light-color);
+}
+
+/* Impostazione del testo con ombra */
+.text_shadow {
+    text-shadow: 2px 2px 5px #fff;
+}
+
+/* sfondo verde */
+.bg_green {
+    background-color: var(--bottle-color);
+}
+
+/* sfondo ombra */
+.col_shadow {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    border-radius: 15px;
+}
+
+
+/*! SECTION NAVBAR */
+.navbar {
+    height: 100px;
+    padding: 0px;
+}
+
+.navbar_logo {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.navbar_border_text {
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    font-family: "Autour One", system-ui;
+}
+
+/* Bottone della navbar */
+.navbar-toggler {
+    border: 0px;
+    border-radius: 0px;
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* Colore sfondo elementi navbar della navbar */
+.bg_navbar {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Stili per la navbar quando si scorre */
+.nav-scrolled {
+    margin: 0px;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Effetto di transizione */
+.transition {
+    transition: 0.5s;
+}
+
+/* Dropdown menu nella navbar */
+.navbar-nav .dropdown-menu {
+    border: 1px solid var(--purple-color) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.hover:hover {
+    color: var(--bottle-color);
+    border-top: none;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+.bi-person-hearts:hover {
+    color: var(--light-color);
+    transition: 0.5s;
+}
+
+/*! SECTION FOOTER */
+.text-footer {
+    font-size: 12px;
+}
+
+.borderFooter {
+    border-top: var(--bottle-color) solid 3px;
+}
+
+
+
+/*! Media queries */
+/* da tablet in poi */
+@media screen and (min-width:992px) {
+    .navbar_border_text {
+        border-top: 2px solid var(--green-color);
+        border-bottom: 2px solid var(--green-color);
+    }
+
+    .nav-scrolled {
+        margin: 5px 110px;
+        backdrop-filter: blur(10px);
+        border: 3px solid var(--bottle-color);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .bg_navbar {
+        background-color: transparent !important;
+    }
+
+    .card_categories {
+        width: 85%;
+        border: none;
+        border-radius: 25px;
+    }
+}
+
+/* schermi grandi */
+@media screen and (min-width:1200px) {
+
+    /* sfondo citazione */
+    .bg_cit {
+        background-image: url(../../public/media/assets/citazione.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+/* telefono */
+@media screen and (max-width:992px) {
+
+    /* testo footer */
+    .text-footer {
+        font-size: 10px;
+    }
+}

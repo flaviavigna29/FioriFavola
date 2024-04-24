@@ -3,6 +3,7 @@
     <header class="container-fluid position-relative header_home">
         <div class="row justify-content-center">
             <x-display-errors />
+            <x-display-message />
         </div>
 
         <div class="row justify-content-center">
@@ -30,7 +31,7 @@
     </div>
 
     {{-- ! Sezione Categorie --}}
-    <section class="container-fluid mb-5">
+    <section class="container mb-5">
 
         <div class="row justify-content-center align-items-center mb-5">
             <div class="col-12">
@@ -49,7 +50,7 @@
                         <div class="card-img-overlay text-center">
                             <div class="col_shadow py-0 py-md-3">
                                 <h5 class="card-title fw-bold">Cura e difesa</h5>
-                                <p class="card-text d-none d-md-block">
+                                <p class="card-text d-none d-lg-block">
                                     Hai bisogno di un equipaggiamento completo e di qualità per difendere e curare
                                     gli ambienti e le piante di casa? Niente paura… sei nel posto giusto! Scopri
                                     tutti i prodotti che abbiamo testato e selezionato per te e che ti renderanno
@@ -67,7 +68,7 @@
                         <div class="card-img-overlay text-center">
                             <div class="col_shadow py-0 py-md-3">
                                 <h5 class="card-title fw-bold">Bellezza vitale</h5>
-                                <p class="card-text d-none d-md-block">
+                                <p class="card-text d-none d-lg-block">
                                     In questa categoria trovi tutto ciò che serve alle tue piante per crescere forti
                                     e vigorose... Parliamo di concimi e fitostimolanti!
                                 </p>
@@ -84,7 +85,7 @@
                         <div class="card-img-overlay text-center">
                             <div class="col_shadow py-0 py-md-3">
                                 <h5 class="card-title fw-bold">Terricci e substrati</h5>
-                                <p class="card-text d-none d-md-block">
+                                <p class="card-text d-none d-lg-block">
                                     In questa categoria trovi tutti i terricci, substrati e torbe professionali di
                                     nostra produzione, prodotti finiti e pronti all’uso di altissima qualità, adatti
                                     a tutte le piante che trovi sul nostro shop!.</p>
@@ -101,7 +102,7 @@
                         <div class="card-img-overlay text-center">
                             <div class="col_shadow py-0 py-md-3">
                                 <h5 class="card-title fw-bold">Attrezzi da lavoro</h5>
-                                <p class="card-text d-none d-md-block">
+                                <p class="card-text d-none d-lg-block">
                                     Hai bisogno di un alleato per tenere in ordine il tuo giardino? Scopri gli
                                     strumenti che abbiamo selezionato per te, con caratteristiche di qualità e di
                                     durata nel tempo. Con il giusto attrezzo far giardinaggio diventerà comodo e
@@ -212,12 +213,13 @@
         </div>
     </section> --}}
 
+    {{-- ! Sezione Recensioni --}}
+    <x-index :reviews=$reviews>
+    
+    </x-index>
+
     {{-- ! Sezione Newsletter --}}
     <x-newsletter />
-
-    {{-- ! Sezione Recensioni --}}
-
-
 
     {{-- ! JS Numeri --}}
     {{-- <script>

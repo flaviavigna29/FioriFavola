@@ -1,0 +1,43 @@
+.sfondo_bambu {
+    background-image: url(../../public/media/review/review.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    height: 30vh;
+    border-bottom: var(--bottle-color) 2px solid;
+}
+
+.sfondo_bambu_2 {
+    background-image: url(../../public/media/review/review2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bi-arrow-right-square-fill:hover {
+    color: var(--light-color);
+    transition: 0.5s;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    background: #EBEBE5;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-prev {
+    color:var(--light-color)!important; 
+}
+
+.swiper-button-next {
+    color: var(--bottle-color)!important; 
+}

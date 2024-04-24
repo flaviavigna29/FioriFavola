@@ -3,7 +3,7 @@
       aria-label="Eighth navbar example">
       <div class="container-fluid p-0">
           <!-- Logo della navbar -->
-          <a class="navbar-brand" href="{{ route('home') }}">
+          <a class="navbar-brand" href="{{ route('review.index') }}">
               <img src="media/logo/logo-removebg-preview.png" class="navbar_logo">
           </a>
           <!-- Bottone del collasso modalità mobile -->
@@ -16,7 +16,7 @@
               <ul class="navbar-nav me-auto mb-3 mb-md-3 mb-lg-0">
                   <!-- Elemento del menu: Catalogo -->
                   <li class="nav-item me-md-5 my-1 my-lg-0">
-                      <a class="nav-link navbar_border_text hover" aria-current="page" href="#">Catalogo</a>
+                      <a class="nav-link navbar_border_text hover" aria-current="page" href="#">Piante</a>
                   </li>
                   <!-- Elemento del menu: Categorie -->
                   <li class="nav-item me-md-5 my-1 my-lg-0 dropdown">
@@ -52,7 +52,7 @@
                   <div class="nav-item my-1 my-lg-0 dropdown">
                       <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         @guest<i class="bi bi-person-hearts tx-bottle"></i>@endguest
-                        @auth <p class="dropdown-item font-tit tx-bottle m-0 fs-5 ">{{ Auth::user()->name }}</p>@endauth
+                        @auth <p class="dropdown-item font-tit tx-bottle m-0 fs-5 ">Ciao, {{ Auth::user()->name }}</p>@endauth
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end">
                           @guest

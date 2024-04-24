@@ -10,24 +10,21 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMail extends Mailable
+class Newsletter extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $name, $surname, $email, $message;
+    public $email;
 
-    public function __construct($name, $surname, $email, $message)
+    public function __construct($email)
     {
-        $this->name = $name;
-        $this->surname = $surname;
         $this->email = $email;
-        $this->message = $message;
     }
 
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Grazie per averci contattato',
+            subject: 'Grazie per esserti iscritto alla newsletter',
             from: new Address('fiorifavola@noreply.com')
         );
     }
@@ -38,7 +35,7 @@ class ContactMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.contact-mail',
+            view: 'mail.newsletter-mail',
         );
     }
 

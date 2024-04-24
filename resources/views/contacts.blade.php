@@ -84,26 +84,26 @@
                                 </div>
                             @endif
                             <div class="col my-2">
-                                <input name="name" class="form-control2" value="{{ old('name') }}" type="text"
+                                <input name="name" class="form-control search_" value="{{ old('name') }}" type="text"
                                     placeholder="Nome">
                             </div>
                             <div class="col my-2">
-                                <input name="surname" class="form-control2" type="text" value="{{ old('surname') }}"
+                                <input name="surname" class="form-control search_" type="text" value="{{ old('surname') }}"
                                     placeholder="Cognome">
                             </div>
 
                             <div class=" my-2">
-                                <input name="email" class="form-control2" type="email" value="{{ old('email') }}"
+                                <input name="email" class="form-control search_" type="email" value="{{ old('email') }}"
                                     placeholder="email">
                             </div>
 
                             <div class="col-12 my-2">
                                 <label for="exampleFormControlTextarea1">Inserisci il testo</label>
-                                <textarea name="message" class="form-control2" id="exampleFormControlTextarea1" rows="3">{{ old('message') }}</textarea>
+                                <textarea name="message" class="form-control search_" id="exampleFormControlTextarea1" rows="3">{{ old('message') }}</textarea>
 
                             </div>
                             <div class="my-2 ">
-                                <button class="form-control2 text-black button_contacts">Invia il messaggio</button>
+                                <button class="form-control text-black button_contacts">Invia il messaggio</button>
                             </div>
 
                         </div>

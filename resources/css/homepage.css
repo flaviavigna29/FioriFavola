@@ -31,24 +31,24 @@
 }
 
 /* Card */
-.swiper-slide {
-    /* Stile generale delle slide */
+/* .swiper-slide {
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .swiper-slide img {
-    /* Stile delle immagini all'interno delle slide */
+    Stile delle immagini all'interno delle slide
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .swiper-slide .cardArticles .card-body {
-    /* Stili per il corpo della card */
+    Stili per il corpo della card
     padding: 20px;
-}
+} */
 
 /* Informazioni */
 .icons_ {
