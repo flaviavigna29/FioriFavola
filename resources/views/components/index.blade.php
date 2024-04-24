@@ -16,7 +16,7 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="col-10 d-flex justify-content-center align-items-center">
 
-                            {{-- <img src="" alt="" class="mx-3"> --}}
+                            <img src="{{ Storage::url($review->img) }}" alt="" class="mx-3" style="width: 100px" >
                             <div class="mx-3 mt-3">
                                 <h5 class="fw-bold">{{ $review->name }} {{ $review->surname }}</h5>
                                 <p>{{ $review->message }}</p>

@@ -4,7 +4,7 @@
       <div class="container-fluid p-0">
           <!-- Logo della navbar -->
           <a class="navbar-brand" href="{{ route('review.index') }}">
-              <img src="media/logo/logo-removebg-preview.png" class="navbar_logo">
+              <img src="../media/logo/logo-removebg-preview.png" class="navbar_logo">
           </a>
           <!-- Bottone del collasso modalità mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"

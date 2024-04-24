@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('message');
             $table->text('body');
             $table->string('gender');
+            $table->string('img');
             $table->timestamps();
         });
     }

@@ -33,9 +33,10 @@ class ReviewController extends Controller
     {
         if ($request->input('gender') === 'M') {
             $gender = 'M';
-        }
-        elseif ($request->input('gender') === 'F'){
+            $img = 'public/review/2.png';
+        } elseif ($request->input('gender') === 'F') {
             $gender = 'F';
+            $img = 'public/review/1.png';
         }
 
         Review::create([
@@ -44,6 +45,7 @@ class ReviewController extends Controller
             'message' => $request->message,
             'body' => $request->body,
             'gender' => $gender,
+            'img' => $img
         ]);
 
         return redirect()->back()->with('message', 'Recensione inserita con successo.');

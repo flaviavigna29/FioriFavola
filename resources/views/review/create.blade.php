@@ -36,7 +36,7 @@
                         <input name="surname" type="text" class="form-control search_" id="surname">
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Breve</label>
+                        <label for="message" class="form-label">Breve descrizione</label>
                         <input name="message" type="text" class="form-control search_" id="message">
                     </div>
 

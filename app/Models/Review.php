@@ -14,5 +14,6 @@ class Review extends Model
         'message',
         'body',
         'gender',
+        'img'
     ];
 }

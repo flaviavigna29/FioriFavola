@@ -1,5 +1,5 @@
 .sfondo_bambu {
-    background-image: url(../../public/media/review/review.png);
+    background-image: url(../../public/media/assets/review.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 50px;
@@ -8,7 +8,7 @@
 }
 
 .sfondo_bambu_2 {
-    background-image: url(../../public/media/review/review2.png);
+    background-image: url(../../public/media/assets/review2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
