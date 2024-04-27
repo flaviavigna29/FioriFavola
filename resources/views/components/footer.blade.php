@@ -101,7 +101,7 @@
         </div>
         <!-- Copyright -->
         <div class="row mt-3">
-            <p class="text-center text-footer">© 2024 - Fiori Favola by DEV Factory</p>
+            <p class="text-center text-footer">© 2024 - Fiori Favola</p>
         </div>
     </div>
 </footer>

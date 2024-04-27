@@ -3,7 +3,7 @@
       aria-label="Eighth navbar example">
       <div class="container-fluid p-0">
           <!-- Logo della navbar -->
-          <a class="navbar-brand" href="{{ route('review.index') }}">
+          <a class="navbar-brand" href="{{ route('review.review') }}">
               <img src="../media/logo/logo-removebg-preview.png" class="navbar_logo">
           </a>
           <!-- Bottone del collasso modalità mobile -->
@@ -16,7 +16,8 @@
               <ul class="navbar-nav me-auto mb-3 mb-md-3 mb-lg-0">
                   <!-- Elemento del menu: Catalogo -->
                   <li class="nav-item me-md-5 my-1 my-lg-0">
-                      <a class="nav-link navbar_border_text hover" aria-current="page" href="#">Piante</a>
+                      <a class="nav-link navbar_border_text hover" aria-current="page"
+                          href="{{ route('prova') }}">Piante</a>
                   </li>
                   <!-- Elemento del menu: Categorie -->
                   <li class="nav-item me-md-5 my-1 my-lg-0 dropdown">
@@ -25,7 +26,7 @@
                           Cura delle Piante
                       </a>
                       <ul class="dropdown-menu">
-                          <li><a class="dropdown-item font-tit" href="#">Cura e Difesa</a></li>
+                          <li><a class="dropdown-item font-tit" href="{{ route('article.index') }}">Cura e Difesa</a></li>
                           <li><a class="dropdown-item font-tit" href="#">Nutrizione e Bellezza</a></li>
                           <li><a class="dropdown-item font-tit" href="#">Terricci e Substrati</a></li>
                           <li><a class="dropdown-item font-tit" href="#">Strumenti e attrezzi</a></li>
@@ -35,6 +36,13 @@
                   <li class="nav-item me-md-5 my-1 my-lg-0">
                       <a class="nav-link navbar_border_text hover" href="{{ route('contatti') }}">Contatti</a>
                   </li>
+                  @auth
+                      <li class="nav-item me-md-5 my-1 my-lg-0">
+                          <a href="{{ route('article.create') }}"><img src="/media/icons/admin.png" alt=""></a>
+                      </li>
+                  @endauth
+
+
               </ul>
 
               <!-- Form di ricerca -->
@@ -51,8 +59,9 @@
                   {{-- <i class="bi bi-bag-heart-fill me-5 me-md-3"></i> --}}
                   <div class="nav-item my-1 my-lg-0 dropdown">
                       <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        @guest<i class="bi bi-person-hearts tx-bottle"></i>@endguest
-                        @auth <p class="dropdown-item font-tit tx-bottle m-0 fs-5 ">Ciao, {{ Auth::user()->name }}</p>@endauth
+                          @guest<i class="bi bi-person-hearts tx-bottle"></i>@endguest
+                          @auth <p class="dropdown-item font-tit tx-bottle m-0 fs-5 ">Ciao, {{ Auth::user()->name }}</p>
+                          @endauth
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end">
                           @guest
@@ -64,7 +73,7 @@
                           @auth
                               <li>
                                   <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
+                                      @csrf
                                       <button class="dropdown-item font-tit" href="#">Logout</button>
                                   </form>
                               </li>
@@ -80,7 +89,7 @@
   </nav>
   <!-- Fine Navbar -->
 
- 
+
   <!-- Accedi Modale -->
   <div class="modal fade sfondo" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -136,14 +145,14 @@
                                   @csrf
                                   <div class="mb-3">
                                       <label for="email" class="form-label small">Email</label>
-                                      <input type="email" name="email" value="{{old('email')}}" class="form-control search_"
-                                          id="email">
+                                      <input type="email" name="email" value="{{ old('email') }}"
+                                          class="form-control search_" id="email">
                                   </div>
 
                                   <div class="mb-3">
                                       <label for="name" class="form-label small">Nome</label>
-                                      <input type="text" name="name" value="{{old('name')}}" class="form-control search_"
-                                          id="name">
+                                      <input type="text" name="name" value="{{ old('name') }}"
+                                          class="form-control search_" id="name">
                                   </div>
 
                                   <div class="mb-3">

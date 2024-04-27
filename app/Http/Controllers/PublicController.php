@@ -14,4 +14,8 @@ class PublicController extends Controller
         return view('history');
     }
 
+    public function prova(){
+        return view('prova');
+    }
+
 }
