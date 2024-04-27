@@ -44,7 +44,7 @@
             data-aos-delay="400" data-aos-duration="900">
 
             <div class="col-6 col-lg-5 my-2">
-                <a href="#" class="justify-content-center align-items-center d-flex flex-column mx-auto">
+                <a href="{{ route('article.index', ['category' => 'Cura e difesa']) }}" class="justify-content-center align-items-center d-flex flex-column mx-auto">
                     <div class="card text-bg-light card_categories">
                         <img src="media/categorie/1.png" class="card-img rounded-4" alt="...">
                         <div class="card-img-overlay text-center">
@@ -62,7 +62,7 @@
             </div>
 
             <div class="col-6 col-lg-5 my-2">
-                <a href="#" class="justify-content-center align-items-center d-flex flex-column mx-auto">
+                <a href="{{ route('article.index', ['category' => 'Bellezza vitale']) }}" class="justify-content-center align-items-center d-flex flex-column mx-auto">
                     <div class="card text-bg-light card_categories">
                         <img src="media/categorie/2.png" class="card-img rounded-4" alt="...">
                         <div class="card-img-overlay text-center">
@@ -79,7 +79,7 @@
             </div>
 
             <div class="col-6 col-lg-5 my-2">
-                <a href="#" class="justify-content-center align-items-center d-flex flex-column mx-auto">
+                <a href="{{ route('article.index', ['category' => 'Terricci e substrati']) }}" class="justify-content-center align-items-center d-flex flex-column mx-auto">
                     <div class="card text-bg-light card_categories">
                         <img src="media/categorie/3.png" class="card-img rounded-4" alt="...">
                         <div class="card-img-overlay text-center">
@@ -96,7 +96,7 @@
             </div>
 
             <div class="col-6 col-lg-5 my-2">
-                <a href="#" class="justify-content-center align-items-center d-flex flex-column mx-auto">
+                <a href="{{ route('article.index', ['category' => 'Attrezzi']) }}" class="justify-content-center align-items-center d-flex flex-column mx-auto">
                     <div class="card text-bg-light card_categories">
                         <img src="media/categorie/4.png" class="card-img rounded-4" alt="...">
                         <div class="card-img-overlay text-center">
@@ -118,7 +118,7 @@
     </section>
 
     {{-- ! Sezione Ultimi Fiori Inseriti --}}
-    <section class="container-fluid my-5 sfondo">
+    {{-- <section class="container-fluid my-5 sfondo">
         <div class="row justify-content-center align-items-center ">
             <div class="col-12">
                 <h3 class="h1 text-center font-tit tx-bottle" data-aos="zoom-in" data-aos-delay="400"
@@ -126,15 +126,15 @@
                     vogliono... I Best Seller!</h3>
             </div>
         </div>
-        {{-- Carosello Swiper --}}
+        Carosello Swiper
         <div class="swiper mySwiper px-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
             data-aos-delay="600" data-aos-duration="1000">
             <div class="swiper-wrapper py-5 "></div>
             <div class="swiper-pagination"></div>
         </div>
-        {{-- Fine Carosello Swiper --}}
+        Fine Carosello Swiper
         <div id="lastWrapper" class="row px-0 mx-0 px-md-5 mx-md-5"></div>
-    </section>
+    </section> --}}
 
     {{-- ! Sezione Informazioni --}}
     <x-information />

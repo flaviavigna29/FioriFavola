@@ -33,35 +33,35 @@
                             <ul class="dropdown-menu px-4">
                                 <li class="form-check fs-5 dropdown-item">
                                     <input class="form-check-input search_" type="radio" name="category"
-                                        value="P" id="P">
+                                        value="Piante" id="P">
                                     <label class="form-check-label" for="P">
                                         Piante
                                     </label>
                                 </li>
                                 <li class="form-check fs-5 dropdown-item">
                                     <input class="form-check-input search_" type="radio" name="category"
-                                        value="C" id="C">
+                                        value="Cura e difesa" id="C">
                                     <label class="form-check-label" for="C">
                                         Cura
                                     </label>
                                 </li>
                                 <li class="form-check fs-5 dropdown-item">
                                     <input class="form-check-input search_" type="radio" name="category"
-                                        value="B" id="B">
+                                        value="Bellezza vitale" id="B">
                                     <label class="form-check-label" for="B">
                                         Bellezza
                                     </label>
                                 </li>
                                 <li class="form-check fs-5 dropdown-item">
                                     <input class="form-check-input search_" type="radio" name="category"
-                                        value="T" id="T">
+                                        value="Terricci e substrati" id="T">
                                     <label class="form-check-label" for="T">
                                         Terricci
                                     </label>
                                 </li>
                                 <li class="form-check fs-5 dropdown-item">
                                     <input class="form-check-input search_" type="radio" name="category"
-                                        value="A" id="A">
+                                        value="Attrezzi da lavoro" id="A">
                                     <label class="form-check-label" for="A">
                                         Attrezzi
                                     </label>
@@ -79,7 +79,7 @@
                             <input name="subtitle" type="text" placeholder="Titolo n. 2" class="form-control search_" value="{{old('subtitle')}}">
                         </div>
                         <div class="mb-3">
-                            <textarea name="body" class="form-control search_" cols="30" rows="10"
+                            <textarea name="body" class="form-control search_" cols="30" rows="10" maxlength="10000"
                                 placeholder="Testo descrittivo dell'articolo">{{old('body')}}</textarea>
                         </div>
                         <div class="justify-content-around d-flex">

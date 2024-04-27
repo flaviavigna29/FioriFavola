@@ -17,7 +17,7 @@
                   <!-- Elemento del menu: Catalogo -->
                   <li class="nav-item me-md-5 my-1 my-lg-0">
                       <a class="nav-link navbar_border_text hover" aria-current="page"
-                          href="{{ route('prova') }}">Piante</a>
+                          href="{{ route('article.index', ['category' => 'Piante']) }}">Piante</a>
                   </li>
                   <!-- Elemento del menu: Categorie -->
                   <li class="nav-item me-md-5 my-1 my-lg-0 dropdown">
@@ -26,10 +26,10 @@
                           Cura delle Piante
                       </a>
                       <ul class="dropdown-menu">
-                          <li><a class="dropdown-item font-tit" href="{{ route('article.index') }}">Cura e Difesa</a></li>
-                          <li><a class="dropdown-item font-tit" href="#">Nutrizione e Bellezza</a></li>
-                          <li><a class="dropdown-item font-tit" href="#">Terricci e Substrati</a></li>
-                          <li><a class="dropdown-item font-tit" href="#">Strumenti e attrezzi</a></li>
+                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Cura e difesa']) }}">Cura e Difesa</a></li>
+                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Bellezza vitale']) }}">Bellezza vitale</a></li>
+                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Terricci e substrati']) }}">Terricci e Substrati</a></li>
+                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Attrezzi']) }}">Strumenti e attrezzi</a></li>
                       </ul>
                   </li>
                   <!-- Elemento del menu: Contatti -->

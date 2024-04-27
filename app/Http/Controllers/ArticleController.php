@@ -11,12 +11,13 @@ class ArticleController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $articles = Article::all();
-        // dd($articles);
-        return view('article.index', compact('articles'));
+        $category = $request->input('category');
+        $articles = Article::where('category', $category)->get();
+        return view('article.index', compact('articles', 'category'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -49,7 +50,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        return view('article.show', compact('article'));
     }
 
     /**
