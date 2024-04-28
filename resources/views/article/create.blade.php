@@ -18,6 +18,7 @@
                                 </ul>
                             </div>
                         @endif
+                        <h3 class="text-center tx-bottle my-3 fw-bold">Crea Articolo</h3>
                         <div class="mb-3">
                             <input name="title" type="text" placeholder="Nome dell'articolo" value="{{old('title')}}"
                                 class="form-control search_">

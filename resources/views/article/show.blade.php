@@ -1,14 +1,39 @@
 <x-layout>
-    <article class="container pt-5">
-        <div class="row pt-5">
-            <div class="col-6 pt-5">
-                <img src="../media/logo/logo-removebg-preview.png" alt="">
+    <header class="container-fluid header_article d-flex justify-content-center align-items-center position-relative ">
+        <div class="row">
+            <h4 class="font-cit fw-bold tx-bottle title_history text-center ">{{ $article->title }}</h4>
+        </div>
+        @auth
+            <div class="row position-absolute bottom-0 end-0">
+                <div class="d-flex">
+                    <a href="{{route('article.edit', compact('article') )}}" class="mx-3"><i class="bi bi-pencil-fill fs-4 tx-bottle"></i></a>
+                    <a href="" class="mx-3"><i class="bi bi-trash3-fill fs-4 tx-bottle"></i></a>
+                </div>
             </div>
-            <div class="col-6 pt-5">
-                <h2 class="mb-3">Nome Articolo</h2>
-                <h4 class="mb-3">prezzo articolo</h4>
-                <h3></h3>
-
+        @endauth
+    </header>
+    <article class="container">
+        <div class="row">
+            <div class="col-6 pt-5 ">
+                <img src="{{ Storage::url($article->img) }}" alt="" width="500px"
+                    class="rounded position-sticky">
+            </div>
+            <div class="col-6 pt-5 position-relative">
+                <div class="col position-absolute top-5 end-0">
+                    <a href="" class="mx-3"><i class="bi bi-heart-fill fs-1 tx-bottle"></i></a>
+                </div>
+                <p class="my-3 fs-3 ">{{ $article->description }}</p>
+                <h3 class="my-3">{{ $article->price }} €</h3>
+                <div class="d-flex my-5">
+                    <i class="bi bi-dash-circle fs-3 me-2 tx-bottle"></i>
+                    <p class="fs-3">1</p>
+                    <i class="bi bi-plus-circle fs-3 ms-2 tx-bottle"></i>
+                    <p class="fs-6 text-center font-tit fw-bold btn btn-outline-secondary button_ ms-4 px-3 pt-1">
+                        <a href="#" class="text-decoration-none text-black ">Aggiungi al carrello</a>
+                    </p>
+                </div>
+                <p class="mt-5 mb-3 font-tit fs-2 tx-bottle fw-bold">{{ $article->subtitle }}</p>
+                <p class="my-3 fs-5">{{ $article->body }}</p>
             </div>
         </div>
 

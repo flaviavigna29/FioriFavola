@@ -4,12 +4,12 @@
       <div class="container-fluid p-0">
           <!-- Logo della navbar -->
           <a class="navbar-brand" href="{{ route('review.review') }}">
-              <img src="../media/logo/logo-removebg-preview.png" class="navbar_logo">
+              <img src="../../media/logo/logo-removebg-preview.png" class="navbar_logo">
           </a>
           <!-- Bottone del collasso modalità mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
               aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="media/assets/icons8-foglia-40.png" alt="">
+              <img src="../../media/assets/icons8-foglia-40.png" alt="">
           </button>
           <!-- Contenuto della navbar -->
           <div class="collapse navbar-collapse p-2 bg_navbar" id="navbarsExample07">
@@ -29,7 +29,7 @@
                           <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Cura e difesa']) }}">Cura e Difesa</a></li>
                           <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Bellezza vitale']) }}">Bellezza vitale</a></li>
                           <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Terricci e substrati']) }}">Terricci e Substrati</a></li>
-                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Attrezzi']) }}">Strumenti e attrezzi</a></li>
+                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Attrezzi da lavoro']) }}">Strumenti e attrezzi</a></li>
                       </ul>
                   </li>
                   <!-- Elemento del menu: Contatti -->

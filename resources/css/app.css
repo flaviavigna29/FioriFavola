@@ -162,7 +162,7 @@
 
 /* Dropdown menu nella navbar */
 .navbar-nav .dropdown-menu {
-    border: 1px solid var(--purple-color) !important;
+    border: 1px solid var(--light-color) !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
@@ -176,7 +176,7 @@
     transition: 0.7s;
 }
 
-.bi-person-hearts:hover {
+.bi:hover {
     color: var(--light-color);
     transition: 0.5s;
 }

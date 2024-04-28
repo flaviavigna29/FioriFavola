@@ -11,7 +11,7 @@
 
         <div>
             <div class="d-flex justify-content-between tx-bottle">
-                <i class="bi bi-info-circle-fill fs-4 tx-bottle text-center"></i>
+                <a href="{{route('article.show', compact('article'))}}"><i class="bi bi-info-circle-fill fs-4 tx-bottle"></i></a>
                 <i class="bi bi-bag-heart-fill fs-4"></i>
             </div>
         </div>

@@ -58,7 +58,7 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        return view('article.edit', compact('article'));
     }
 
     /**
@@ -66,7 +66,26 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+
+        if ($request->file('img')) {
+            $img = $request->file('img')
+                ->store('public/article');
+        }
+        else{
+            $img = $article->img;
+        }
+
+        $article->update([
+            'title' => $request->title,
+            'price' => $request->price,
+            'category' => $request->category,
+            'description' => $request->description,
+            'subtitle' => $request->subtitle,
+            'body' => $request->body,
+        ]);
+
+
+        return redirect(route('article.index'))->with('message', 'articolo modificato');
     }
 
     /**

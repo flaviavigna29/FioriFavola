@@ -40,3 +40,14 @@
 .heart:hover {
     color: red;
 }
+
+
+/* PAGINA ARTICOLI SHOW */
+.header_article {
+    margin-top: 110px;
+    background-image: url(../../public/media/categorie/sfondo_articoli.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+}

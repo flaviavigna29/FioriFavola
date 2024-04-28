@@ -96,7 +96,7 @@
             </div>
 
             <div class="col-6 col-lg-5 my-2">
-                <a href="{{ route('article.index', ['category' => 'Attrezzi']) }}" class="justify-content-center align-items-center d-flex flex-column mx-auto">
+                <a href="{{ route('article.index', ['category' => 'Attrezzi da lavoro']) }}" class="justify-content-center align-items-center d-flex flex-column mx-auto">
                     <div class="card text-bg-light card_categories">
                         <img src="media/categorie/4.png" class="card-img rounded-4" alt="...">
                         <div class="card-img-overlay text-center">

@@ -27,6 +27,9 @@ Route::get('/review/create', [ReviewController::class, 'create'])-> name('review
 Route::post('review/store', [ReviewController::class, 'store'])->name('review.store');
 
 // Rotta per gli articoli
-Route::get('/article.create', [ArticleController::class, 'create'])-> name('article.create')->middleware('auth');
-Route::post('/article.store', [ArticleController::class, 'store'])->name('article.store')->middleware('auth');
-Route::get('/article.index', [ArticleController::class, 'index'])->name('article.index');
+Route::get('/article/create', [ArticleController::class, 'create'])-> name('article.create')->middleware('auth');
+Route::post('/article/store', [ArticleController::class, 'store'])->name('article.store')->middleware('auth');
+Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');
+Route::get('/article/show/{article}', [ArticleController::class, 'show'])-> name('article.show');
+Route::get('/article/edit/{article}', [ArticleController::class, 'edit'])->name('article.edit')->middleware('auth');
+Route::put('/article/update/{article}', [ArticleController::class, 'update'])->name('article.update')->middleware('auth');
