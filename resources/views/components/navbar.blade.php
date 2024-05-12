@@ -17,7 +17,7 @@
                   <!-- Elemento del menu: Catalogo -->
                   <li class="nav-item me-md-5 my-1 my-lg-0">
                       <a class="nav-link navbar_border_text hover" aria-current="page"
-                          href="{{ route('article.index', ['category' => 'Piante']) }}">Piante</a>
+                          href="{{ route('article.all') }}">Catalogo</a>
                   </li>
                   <!-- Elemento del menu: Categorie -->
                   <li class="nav-item me-md-5 my-1 my-lg-0 dropdown">
@@ -26,21 +26,22 @@
                           Cura delle Piante
                       </a>
                       <ul class="dropdown-menu">
-                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Cura e difesa']) }}">Cura e Difesa</a></li>
-                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Bellezza vitale']) }}">Bellezza vitale</a></li>
-                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Terricci e substrati']) }}">Terricci e Substrati</a></li>
-                          <li><a class="dropdown-item font-tit" href="{{ route('article.index', ['category' => 'Attrezzi da lavoro']) }}">Strumenti e attrezzi</a></li>
+                          @foreach ($categories as $category)
+                              <li><a class="dropdown-item font-tit"
+                                      href="{{ route('article.index', compact('category')) }}">{{$category->name}} <span>{{$category->articles->count()}}</span></a>
+                              </li>
+                          @endforeach
                       </ul>
                   </li>
                   <!-- Elemento del menu: Contatti -->
                   <li class="nav-item me-md-5 my-1 my-lg-0">
                       <a class="nav-link navbar_border_text hover" href="{{ route('contatti') }}">Contatti</a>
                   </li>
-                  @auth
+                  @if (Auth::check() && Auth::user()->is_admin)
                       <li class="nav-item me-md-5 my-1 my-lg-0">
                           <a href="{{ route('article.create') }}"><img src="/media/icons/admin.png" alt=""></a>
                       </li>
-                  @endauth
+                  @endif
 
 
               </ul>

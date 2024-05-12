@@ -2,40 +2,39 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\ArticleRequest;
 
 class ArticleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index(Request $request)
+    // Pagina di visualizzazione articoli per categoria
+    public function index(Request $request, Category $category)
     {
-        $category = $request->input('category');
-        $articles = Article::where('category', $category)->get();
+        $articles = $category->articles;
         return view('article.index', compact('articles', 'category'));
     }
 
+    // Pagina di visualizzazione di tutti gli articoli
+    public function all(Request $request)
+    {
+        $articles = Article::all();
+        return view('article.all', compact('articles'));
+    }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view('article.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(ArticleRequest $request)
     {
         Article::create([
             'title' => $request->title,
             'price' => $request->price,
-            'category' => $request->category,
+            'category_id' => $request->category,
             'img' => $request->file('img')->store('public/article'),
             'description' => $request->description,
             'subtitle' => $request->subtitle,
@@ -45,54 +44,43 @@ class ArticleController extends Controller
         return redirect()->back()->with('message', 'Articolo inserito');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(Article $article)
     {
         return view('article.show', compact('article'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(Article $article)
     {
         return view('article.edit', compact('article'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, Article $article)
     {
 
         if ($request->file('img')) {
             $img = $request->file('img')
                 ->store('public/article');
-        }
-        else{
+        } else {
             $img = $article->img;
         }
 
         $article->update([
             'title' => $request->title,
             'price' => $request->price,
-            'category' => $request->category,
             'description' => $request->description,
             'subtitle' => $request->subtitle,
             'body' => $request->body,
+            'category_id' => $request->category,
         ]);
 
 
-        return redirect(route('article.index'))->with('message', 'articolo modificato');
+        return redirect(route('article.edit', compact('article')))->with('message', 'articolo modificato');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(Article $article)
     {
-        //
+        $article->delete();
+
+        return redirect()->back()->with('message', 'Articolo eliminato');
     }
 }

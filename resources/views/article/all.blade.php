@@ -5,7 +5,7 @@
 
             <div class="col-12 my-5">
 
-                <h2 class="display-6 text-center tx-bottle font-tit my-2">{{ $category->name }}</h2>
+                <h2 class="display-6 text-center tx-bottle font-tit my-2">Tutti i nostri articoli</h2>
 
             </div>
 
@@ -38,6 +38,7 @@
             <div class="col-12 col-lg-8">
                 <div class="container">
                     <div class="row justify-content-around" id="articlesWrapper">
+                        {{-- @dd($articles) --}}
                         @foreach ($articles as $article)
                             <div class="col-11 col-md-4 col-lg-4 mb-3">
                                 <x-card :$article />

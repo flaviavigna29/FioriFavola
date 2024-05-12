@@ -1,16 +1,8 @@
 <x-layout>
-    <header class="container-fluid header_article d-flex justify-content-center align-items-center position-relative ">
+    <header class="container-fluid header_article d-flex justify-content-center align-items-center ">
         <div class="row">
             <h4 class="font-cit fw-bold tx-bottle title_history text-center ">{{ $article->title }}</h4>
         </div>
-        @auth
-            <div class="row position-absolute bottom-0 end-0">
-                <div class="d-flex">
-                    <a href="{{route('article.edit', compact('article') )}}" class="mx-3"><i class="bi bi-pencil-fill fs-4 tx-bottle"></i></a>
-                    <a href="" class="mx-3"><i class="bi bi-trash3-fill fs-4 tx-bottle"></i></a>
-                </div>
-            </div>
-        @endauth
     </header>
     <article class="container">
         <div class="row">
