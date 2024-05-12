@@ -1,27 +1,24 @@
 <x-layout>
     {{-- Header --}}
-    <header class="container-fluid header_history">
+    <header class="container-fluid header_history d-flex justify-content-center align-items-center">
+        <div class="row text-center">
+            <h2 class="font-cit fw-bold tx-bottle title_history">Chi siamo</h2>
+        </div>
     </header>
     {{-- Fine Header --}}
 
-    <section class="container my-5 py-5">
+    <section class="container my-5 pb-5">
 
         {{-- Intestazione --}}
-        <div class="row text-center pb-5 justify-content-center">
-            <div class="col-12">
-                <h2 class="font-cit fw-bold tx-bottle title_history">Chi siamo</h2>
-            </div>
-            <div class="row my-5 bg_green justify-content-center">
-                <div class="col-11 col-md-8 my-5 text-center text-white lead">
-                    <p>Benvenuti in <span class="fw-bold">Fiori Favola</span>
-                        , un'azienda fondata da <span class="fw-bold">Annalisa</span> e <span
-                            class="fw-bold">Fabrizio</span>,
-                        appassionati del settore del
-                        florovivaismo e del giardinaggio, che hanno dato vita al loro vivaio cinque anni fa. Questo è un
-                        luogo dove la passione per la natura si unisce alla dedizione per offrire ai nostri clienti
-                        un'esperienza unica.
-                    </p>
-                </div>
+        <div class="row mb-5 bg_green justify-content-center">
+            <div class="col-11 col-md-8 my-5 text-center text-white lead">
+                <p>Benvenuti in <span class="fw-bold">Fiori Favola</span>
+                    , un'azienda fondata da <span class="fw-bold">Annalisa</span> e <span class="fw-bold">Fabrizio</span>,
+                    appassionati del settore del
+                    florovivaismo e del giardinaggio, che hanno dato vita al loro vivaio cinque anni fa. Questo è un
+                    luogo dove la passione per la natura si unisce alla dedizione per offrire ai nostri clienti
+                    un'esperienza unica.
+                </p>
             </div>
         </div>
 

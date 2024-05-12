@@ -1,11 +1,7 @@
 <div class="container py-5 h-100">
 
-    <div class="row text-center">
-
-    </div>
-
     <div class="row my-4 justify-content-center align-items-center h-100 py-4 rounded-5"
-        style="background-color:#EBEBE5; border:var(--bottle-color) 2px solid">
+        style="background-color:#cec0aae0; border:var(--bottle-color) 2px solid">
 
         <h3 class="tx-bottle fw-bold mb-5 text-center my-2">Leggi le nostre recensioni</h3>
 
@@ -35,7 +31,6 @@
 
                 </swiper-slide>
             @endforeach
-
 
         </swiper-container>
 

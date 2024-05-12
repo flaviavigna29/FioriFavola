@@ -1,12 +1,11 @@
 <x-layout>
-    {{-- ! Header  --}}
-    <x-display-message />
     <section class="container-fluid sfondo mt-5 py-5">
         <div class="row justify-content-center mt-2">
             <div class="col-12 col-lg-6 justify-content-center align-items-center">
                 <form class="rounded-4 shadow m-3 m-lg-5 p-3"
                     style="background-color:#cec0aae0; border:var(--bottle-color) 2px solid" method="POST"
                     enctype="multipart/form-data" action="{{ route('article.store') }}">
+                    <x-display-message />
                     <div class="row">
                         @csrf
                         <h3 class="text-center tx-bottle my-3 fw-bold">Crea Articolo</h3>
@@ -73,9 +72,9 @@
                             <textarea name="body" class="form-control search_" cols="30" rows="10" maxlength="10000"
                                 placeholder="Testo descrittivo dell'articolo">{{ old('body') }}</textarea>
                             <p class="text-danger text-center fw-bold pt-2">
-                                    @error('body')
-                                        {{ $message }}
-                                    @enderror
+                                @error('body')
+                                    {{ $message }}
+                                @enderror
                             </p>
                         </div>
                         <div class="justify-content-around d-flex">
@@ -83,10 +82,12 @@
                                     class="bi bi-arrow-right text-white fs-4"></i></button>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>
     </section>
+    <div class="container my-5">
+
+    </div>
 
 </x-layout>

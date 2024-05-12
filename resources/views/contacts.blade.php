@@ -5,7 +5,9 @@
     <article class="container-fluid mb-5 pb-5 block_contacts sfondo">
 
         <div class="mx-1 px-1 mx-md-5 px-md-5">
-            <x-display-message />
+            <div class="mb-2">
+                <x-display-message />
+            </div>
             <div class="row justify-content-evenly">
                 <!-- sezione contatti -->
                 <div class="col-12 col-lg-5 bordo_contacts bg-white" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"

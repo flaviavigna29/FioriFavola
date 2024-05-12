@@ -6,12 +6,12 @@
                 <p class="display-5 text-center font-tit tx-bottle text_shadow mb-4">Crea la tua Recensione</p>
             </div>
         </div>
-        <div class="row justify-content-center mt-0">
+    </header>
+    
+    <div class="container-fluid position-relative sfondo_bambu_2">
+        <div class="row justify-content-center mt-2">
             <x-display-message />
         </div>
-    </header>
-
-    <div class="container-fluid position-relative sfondo_bambu_2 py-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6 justify-content-center align-items-center">
                 <form class="rounded-4 shadow m-3 m-lg-5 p-3"

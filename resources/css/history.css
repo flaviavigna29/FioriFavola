@@ -1,11 +1,11 @@
 /* PAGINA STORIA */
 .header_history {
     margin-top: 110px;
-    background-image: url(../../public/media/ourhistory/5.png);
+    background-image: url(../../public/media/assets/sfondo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 40vh;
 }
 
 .title_history {

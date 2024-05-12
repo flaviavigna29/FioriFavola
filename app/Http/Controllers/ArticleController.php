@@ -22,8 +22,9 @@ class ArticleController extends Controller
     {
         $articles = Article::all();
         return view('article.all', compact('articles'));
-    }
 
+    }
+  
     public function create()
     {
         return view('article.create');
