@@ -84,4 +84,9 @@ class ArticleController extends Controller
 
         return redirect()->back()->with('message', 'Articolo eliminato');
     }
+
+    public function searchArticles(Request $request) {
+        $articles = Article::search($request->searched)->get();
+        return view('article.search', compact('articles'));
+    }
 }

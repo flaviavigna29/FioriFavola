@@ -12,9 +12,15 @@
                     data-aos-delay="200" data-aos-duration="1000">In cerca della pianta perfetta?</p>
                 <p class="text-center font-tit text_shadow mb-5 fs-3" data-aos="fade-up" data-aos-delay="400"
                     data-aos-duration="1000">Scopri quale fa al caso tuo!</p>
-                <input class="form-control font-tit py-3 search_ text-center" data-aos="fade-up" data-aos-delay="600"
-                    data-aos-duration="1000" type="search" placeholder='es. "Kenzia", "Venus Flytrap", ... '
-                    aria-label="Search">
+
+                <!-- Form di ricerca -->
+                <form action="{{ route('article.search') }}" method="GET" role="search" class="d-flex"
+                    data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" type="search">
+                    <input name="searched" class="form-control font-tit py-3 search_ text-center"
+                        placeholder='es. "Kenzia", "Venus Flytrap", ... ' aria-label="Search">
+                    <button type="submit" class="btn btn-search ms-3">Cerca</button>
+                </form>
+
             </div>
     </header>
 
@@ -40,8 +46,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="row justify-content-evenly align-items-center" data-aos="zoom-in"
-                data-aos-delay="400" data-aos-duration="900">
+            <div class="row justify-content-evenly align-items-center" data-aos="zoom-in" data-aos-delay="400"
+                data-aos-duration="900">
                 @foreach ($categories as $category)
                     <div class="col-6 col-lg-5 my-2">
                         <a href="{{ route('article.index', compact('category')) }}"

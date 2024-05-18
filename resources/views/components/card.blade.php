@@ -1,4 +1,5 @@
 <div class="cardArticles h-100 position-relative">
+    {{$slot}}
     <div class="overflow-hidden">
         <img src="{{ Storage::url($article->img) }}" class="img-card card-img-top" alt="...">
         <i class="bi bi-heart-fill fs-3 position-absolute heart"></i>
@@ -26,7 +27,6 @@
                         </button>
                     </form>
                 @endif
-
 
                 <i class="bi bi-bag-heart-fill fs-4"></i>
             </div>

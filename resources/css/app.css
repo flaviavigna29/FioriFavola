@@ -14,6 +14,10 @@
 
 @import 'review.css';
 
+@import 'navbar.css';
+
+@import 'footer.css';
+
 
 
 
@@ -103,108 +107,24 @@
     border-radius: 15px;
 }
 
-
-/*! SECTION NAVBAR */
-.navbar {
-    height: 100px;
-    padding: 0px;
+.btn-search {
+    background-color: var(--bottle-color);
+    color: white;
 }
 
-.navbar_logo {
-    max-width: 120px;
-    max-height: 120px;
-}
-
-.navbar_border_text {
-    border-top: 0px;
-    border-bottom: 0px;
-    padding: 0px;
-    margin-top: 0px;
-    font-family: "Autour One", system-ui;
-}
-
-/* Bottone della navbar */
-.navbar-toggler {
-    border: 0px;
-    border-radius: 0px;
-    transition: var(--bs-navbar-toggler-transition);
-}
-
-.navbar-toggler:focus {
-    box-shadow: none !important;
-}
-
-/* Colore sfondo elementi navbar della navbar */
-.bg_navbar {
-    background-color: rgba(255, 255, 255, 0.8) !important;
-}
-
-/* Stili per la navbar quando si scorre */
-.nav-scrolled {
-    margin: 0px;
-    border: 0px;
-    border-radius: 0px;
-    box-shadow: 0;
-    background-color: rgba(255, 255, 255, 0.8) !important;
-}
-
-/* Effetto di transizione */
-.transition {
-    transition: 0.5s;
-}
-
-/* Dropdown menu nella navbar */
-.navbar-nav .dropdown-menu {
-    border: 1px solid var(--light-color) !important;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-}
-
-.hover:hover {
-    color: var(--bottle-color);
-    border-top: none;
-    border-bottom: none;
+.btn-search:hover {
+    background-color: var(--light-color);
+    color: white;
     font-weight: bold;
-    font-size: large;
-    text-transform: uppercase;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
-.bi:hover {
-    color: var(--light-color);
-    transition: 0.5s;
-}
-
-/*! SECTION FOOTER */
-.text-footer {
-    font-size: 12px;
-}
-
-.borderFooter {
-    border-top: var(--bottle-color) solid 3px;
-}
 
 
 
 /*! Media queries */
 /* da tablet in poi */
 @media screen and (min-width:992px) {
-    .navbar_border_text {
-        border-top: 2px solid var(--green-color);
-        border-bottom: 2px solid var(--green-color);
-    }
-
-    .nav-scrolled {
-        margin: 5px 110px;
-        backdrop-filter: blur(10px);
-        border: 3px solid var(--bottle-color);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .bg_navbar {
-        background-color: transparent !important;
-    }
-
     .card_categories {
         width: 85%;
         border: none;
@@ -220,14 +140,5 @@
         background-image: url(../../public/media/assets/citazione.png);
         background-repeat: no-repeat;
         background-size: contain;
-    }
-}
-
-/* telefono */
-@media screen and (max-width:992px) {
-
-    /* testo footer */
-    .text-footer {
-        font-size: 10px;
     }
 }

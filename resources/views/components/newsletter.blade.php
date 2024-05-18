@@ -1,4 +1,4 @@
-<div class="container py-3 h-100">
+<div class="container py-3 h-100" id="newsletter">
 
     <div class="row my-5 bg_green justify-content-center h-100 py-4 rounded-5">
         <div class="col-10 col-md-8 my-5 text-center text-white lead">

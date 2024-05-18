@@ -45,3 +45,5 @@ Route::get('/article/edit/{article}', [ArticleController::class, 'edit'])->name(
 Route::put('/article/update/{article}', [ArticleController::class, 'update'])->name('article.update')->middleware('isAdmin');
 
 Route::delete('/article/delete/{article}', [ArticleController::class, 'destroy'])->name('article.destroy')->middleware('isAdmin');
+
+Route::get('/article/search', [ArticleController::class, 'searchArticles'])->name('article.search');

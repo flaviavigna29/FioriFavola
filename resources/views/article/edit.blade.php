@@ -42,9 +42,9 @@
                             </p>
                         </div>
                        
-                        <div class="mb-3 ">
-                            <span class="form-label">Immagine attuale:</span>
-                            <img src="{{Storage::url($article->img)}}" alt="{{$article->title}}" width="400" class="search_">
+                        <div class="mb-5 d-flex flex-column align-items-center">
+                            <p class="form-label fs-5">Immagine attuale:</p>
+                            <img src="{{Storage::url($article->img)}}" alt="{{$article->title}}" width="250" class="search_">
                         </div>
                         <div class="mb-3">
                             <input name="img" type="file" class="form-control d-flex me-3 search_">

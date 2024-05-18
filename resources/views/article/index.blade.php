@@ -13,7 +13,7 @@
             {{-- COLONNA FILTRI --}}
             <div class="col-12 col-lg-3 px-4" id="sezioneFiltri">
                 <div class="position-sticky my-5">
-                    <livewire:article-filter></livewire:article-filter>
+                    {{-- <livewire:article-filter></livewire:article-filter> --}}
                     {{-- <div class="mb-5">
                         <h5 class="font-tit">Filtro per Parola</h5>
                         <div class="my-3">

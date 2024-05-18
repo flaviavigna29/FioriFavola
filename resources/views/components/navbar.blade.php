@@ -2,37 +2,48 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top nav-scrolled transition mx-0 px-0 px-md-5"
       aria-label="Eighth navbar example">
       <div class="container-fluid p-0">
+
           <!-- Logo della navbar -->
           <a class="navbar-brand" href="{{ route('review.review') }}">
               <img src="../../media/logo/logo-removebg-preview.png" class="navbar_logo">
           </a>
+
           <!-- Bottone del collasso modalità mobile -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
               aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
               <img src="../../media/assets/icons8-foglia-40.png" alt="">
           </button>
+
           <!-- Contenuto della navbar -->
           <div class="collapse navbar-collapse p-2 bg_navbar" id="navbarsExample07">
               <ul class="navbar-nav me-auto mb-3 mb-md-3 mb-lg-0">
+
                   <!-- Elemento del menu: Catalogo -->
                   <li class="nav-item me-md-5 my-1 my-lg-0">
                       <a class="nav-link navbar_border_text hover" aria-current="page"
                           href="{{ route('article.all') }}">Catalogo</a>
                   </li>
+
                   <!-- Elemento del menu: Categorie -->
                   <li class="nav-item me-md-5 my-1 my-lg-0 dropdown">
                       <a class="nav-link dropdown-toggle navbar_border_text hover" href="#" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           Cura delle Piante
                       </a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu px-2">
                           @foreach ($categories as $category)
-                              <li><a class="dropdown-item font-tit"
-                                      href="{{ route('article.index', compact('category')) }}">{{$category->name}} <span>{{$category->articles->count()}}</span></a>
+                              <li>
+                                <a class="dropdown-item font-tit d-flex justify-content-between mx-auto"
+                                      href="{{ route('article.index', compact('category')) }}">
+                                 <p class="me-3">{{ $category->name }}</p>
+                                      
+                                      <span>{{ $category->articles->count() }}</span>
+                                    </a>
                               </li>
                           @endforeach
                       </ul>
                   </li>
+
                   <!-- Elemento del menu: Contatti -->
                   <li class="nav-item me-md-5 my-1 my-lg-0">
                       <a class="nav-link navbar_border_text hover" href="{{ route('contatti') }}">Contatti</a>
@@ -47,17 +58,19 @@
               </ul>
 
               <!-- Form di ricerca -->
-              <div class="input-group me-md-5 my-1 my-lg-0 d-none d-md-block ">
-                  {{-- <span class="input-group-text search_">
-                      <img width="20" height="20" src="https://img.icons8.com/ios/50/search-for-love--v1.png"
-                          alt="search-for-love--v1 Search Icon" />
-                  </span> --}}
-                  <input type="text" class="form-control search_ w-100" placeholder="Search" aria-label="Search"
-                      aria-describedby="basic-addon1">
+              <div class="input-group me-md-5 my-1 my-lg-0 d-none d-md-block">
+                  <form action="{{ route('article.search') }}" method="GET" role="search" class="d-flex">
+                      <input name="searched" type="search" class="form-control search_ w-75"
+                          placeholder='es. "Kenzia, "Venus Flytrap", ...' aria-label="Search"
+                          aria-describedby="basic-addon1">
+                      <button type="submit" class="btn btn-search ms-2">Cerca</button>
+                  </form>
               </div>
+
+
+
               <!-- Icona accedi-->
               <div class="fs-4 tx-bottle my-3 my-lg-0 d-flex navbar-nav">
-                  {{-- <i class="bi bi-bag-heart-fill me-5 me-md-3"></i> --}}
                   <div class="nav-item my-1 my-lg-0 dropdown">
                       <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           @guest<i class="bi bi-person-hearts tx-bottle"></i>@endguest
@@ -81,9 +94,6 @@
                           @endauth
                       </ul>
                   </div>
-                  {{-- <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <i class="bi bi-person-hearts tx-bottle"></i>
-                  </button> --}}
               </div>
           </div>
       </div>

@@ -33,12 +33,12 @@
 
 .heart {
     color: white;
-    right: 15px;
+    left: 15px;
     text-shadow: 2px 2px 5px #706a6a;
 }
 
 .heart:hover {
-    color: red;
+    color: red !important;
 }
 
 

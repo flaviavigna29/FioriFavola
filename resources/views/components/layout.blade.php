@@ -14,8 +14,6 @@
         rel="stylesheet">
     <!-- aos cdn -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- ! swiper cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     @vite (['../../resources/css/app.css' , '../../resources/js/app.js'])
 </head>
@@ -27,8 +25,7 @@
     {{ $slot }}
 
     <x-footer />
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     <!-- aos js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

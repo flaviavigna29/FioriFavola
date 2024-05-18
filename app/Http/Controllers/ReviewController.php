@@ -13,7 +13,7 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $reviews = Review::all();
+        $reviews = Review::orderBy('created_at', 'desc')->get();
         // dd($reviews);
         return view('welcome', compact('reviews'));
     }

@@ -1,0 +1,17 @@
+
+/*! SECTION FOOTER */
+.text-footer {
+    font-size: 12px;
+}
+
+.borderFooter {
+    border-top: var(--bottle-color) solid 3px;
+}
+
+@media screen and (max-width:992px) {
+
+    /* testo footer */
+    .text-footer {
+        font-size: 10px;
+    }
+}

@@ -14,7 +14,12 @@
                 {{-- @dd($articles) --}}
                 @foreach ($articles as $article)
                     <div class="col-11 col-md-4 col-lg-3 mb-3">
-                        <x-card :$article />
+                        <x-card :$article>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Nuovo
+                            </span>
+                        </x-card>
                     </div>
                 @endforeach
             </div>
