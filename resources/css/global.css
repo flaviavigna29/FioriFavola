@@ -1,0 +1,86 @@
+/*? STILI PRINCIPALI */
+* {
+    font-family: "Roboto Serif", serif;
+}
+
+/* Variabili per i colori */
+:root {
+    --light-color: #66b100;
+    --bottle-color: #056804;
+    --green-color: #003d0099;
+}
+
+/* Testo principale */
+.font-tit {
+    font-family: "Autour One", system-ui;
+}
+
+/* Testo corsivo */
+.font-cit {
+    font-family: "Great Vibes", cursive;
+}
+
+/* Testo colorato di verde */
+.tx-bottle {
+    color: var(--bottle-color);
+}
+
+/*? STILI RIUTILIZZABILI */
+
+/* Immagini con ombra e bordo arrotondato */
+.img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+}
+
+/* Impostazione dello sfondo delle foglie */
+.sfondo {
+    background-image: url(../../public/media/assets/sfondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Pulsante di dimensioni ridotte */
+.button_ {
+    border: 2px var(--bottle-color) solid;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-style: italic;
+    font-size: small;
+    padding: 3px 4px;
+}
+
+.button_:hover {
+    background-color: var(--light-color);
+}
+
+/* Impostazione del testo con ombra */
+.text_shadow {
+    text-shadow: 2px 2px 5px #fff;
+}
+
+/* sfondo verde */
+.bg_green {
+    background-color: var(--bottle-color);
+}
+
+/* sfondo ombra */
+.col_shadow {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    border-radius: 15px;
+}
+
+.btn-search {
+    background-color: var(--bottle-color);
+    color: white;
+}
+
+.btn-search:hover {
+    background-color: var(--light-color);
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+
+

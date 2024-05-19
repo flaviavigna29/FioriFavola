@@ -14,6 +14,9 @@ use App\Http\Controllers\NewsletterController;
 // Rotta per la pagina della storia
 Route::get('/history', [PublicController::class, 'history'])-> name('storia');
 
+// Rotta per la pagina del carrello
+Route::get('/shop', [PublicController::class, 'shop'])-> name('shop');
+
 // Rotta per la pagina del contattaci
 Route::get('/contacts', [ContactController::class, 'contacts'])-> name('contatti');
 

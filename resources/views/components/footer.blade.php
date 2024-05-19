@@ -27,7 +27,7 @@
                             </a>
                         </li>
                     </div>
-                    <div class="col-4 col-lg-2">
+                    <div class="col-4 col-lg-3">
                         <li class="my-2">
                             <a href="{{route('review.review')}}#newsletter" class="text-decoration-none text-reset">
                                 <i class="bi bi-flower1 me-2"></i>

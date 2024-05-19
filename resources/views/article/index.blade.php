@@ -3,45 +3,49 @@
         <div class="row justify-content-evenly">
 
             <div class="col-12 my-5">
-
                 <h2 class="display-6 text-center tx-bottle font-tit my-2">{{ $category->name }}</h2>
+                <div class="col-12 col-lg-6 text-center d-flex justify-content-center mx-auto ">
+                    <h6 class="text-center tx-bottle font-tit my-2 lead">{{ $category->description }}</h6>
+                </div>
+
                 <div class="row justify-content-center mt-2">
                     <x-display-message />
                 </div>
             </div>
 
-            {{-- COLONNA FILTRI --}}
-            <div class="col-12 col-lg-3 px-4" id="sezioneFiltri">
-                <div class="position-sticky my-5">
-                    {{-- <livewire:article-filter></livewire:article-filter> --}}
-                    {{-- <div class="mb-5">
-                        <h5 class="font-tit">Filtro per Parola</h5>
-                        <div class="my-3">
-                            <label for="exampleFormControlInput1" class="form-label">Cerca tra gli articoli</label>
-                            <input type="text" class="form-control search_" id="inputWord" placeholder="">
-                        </div>
-                    </div>
+            {{-- COLONNA CATEGORIE --}}
+            <div class="col-lg-3 px-lg-4 d-none d-lg-block">
+                <div class="position-sticky">
+                    {{-- @dd($categories) --}}
 
-                    <div class="mb-5">
-                        <h5 class="font-tit">Filtro per Prezzo</h5>
-                        <label for="customRange1" class="form-label my-1 justify-content-between">da €0 a €<span
-                                id="currentValue"></span></label>
-                        <input id="inputPrice" type="range" class="form-range color-point" max=""
-                            min="" value="">
-
-                    </div> --}}
-
+                    @foreach ($categories as $el)
+                        @if ($el->id !== $category->id)
+                            <a href="{{ route('article.index', ['category' => $el->id]) }}"
+                                class="text-decoration-none">
+                                <div class="card mb-3 card_index" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                        <div class="col-2">
+                                            <img src="{{ '/' . $el->img }}" class=" rounded-start" alt="..."
+                                                style="width: 70px"
+                                                >
+                                        </div>
+                                        <div class="col-8 card-body d-flex flex-column justify-content-end ">
+                                            <h5 class="card-title ps-3">{{ $el->name }}</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        @endif
+                    @endforeach
                 </div>
-
-
             </div>
 
             {{-- CARD ARTICOLI --}}
-            <div class="col-12 col-lg-8">
+            <div class="col-lg-8">
                 <div class="container">
-                    <div class="row justify-content-around" id="articlesWrapper">
+                    <div class="row justify-content-around">
                         @foreach ($articles as $article)
-                            <div class="col-11 col-md-4 col-lg-4 mb-3">
+                            <div class="col-md-6 col-lg-4 mb-3">
                                 <x-card :$article />
                             </div>
                         @endforeach

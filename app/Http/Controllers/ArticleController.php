@@ -86,7 +86,8 @@ class ArticleController extends Controller
     }
 
     public function searchArticles(Request $request) {
+        $word = $request->searched;
         $articles = Article::search($request->searched)->get();
-        return view('article.search', compact('articles'));
+        return view('article.search', compact('articles', 'word'));
     }
 }

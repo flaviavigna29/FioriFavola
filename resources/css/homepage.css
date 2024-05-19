@@ -23,6 +23,11 @@
     border-radius: 25px;
 }
 
+.card_categories:hover {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.8s;
+}
+
 .bg_categories {
     background-image: url(../../public/media/categorie/5.png);
     background-repeat: no-repeat;
@@ -74,5 +79,25 @@
     .bg_history {
 
         height: 50vh;
+    }
+}
+
+/* schermi grandi */
+@media screen and (min-width:1200px) {
+
+    /* sfondo citazione */
+    .bg_cit {
+        background-image: url(../../public/media/assets/citazione.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+/* da tablet in poi */
+@media screen and (min-width:992px) {
+    .card_categories {
+        width: 85%;
+        border: none;
+        border-radius: 25px;
     }
 }

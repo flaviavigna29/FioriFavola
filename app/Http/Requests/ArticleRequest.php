@@ -28,7 +28,7 @@ class ArticleRequest extends FormRequest
             'img' => 'required',
             'description' => 'required | max:255', 
             'subtitle' => 'required | max:255',
-            'body' => 'required| max:10000',
+            'body' => 'required',
 
         ];
     }
@@ -45,7 +45,6 @@ class ArticleRequest extends FormRequest
             'subtitle.required' => 'inserisci un sottotitolo',
             'subtitle.max' => 'il sottotitolo può contenere un massimo di 255 caratteri',
             'body.required' => 'inserisci il testo',
-            'body.max' => 'il testo può contenere un massimo di 10000 caratteri',
         ];
     }
 }

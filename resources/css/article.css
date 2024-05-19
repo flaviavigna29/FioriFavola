@@ -15,7 +15,12 @@
 
 .position-sticky {
     position: sticky;
-    top: 200px;
+    top: 120px;
+}
+
+.card_index:hover {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.8s;
 }
 
 .form-check-input:checked {

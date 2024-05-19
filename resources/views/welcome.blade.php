@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-
+    
     {{-- ! Sezione Categorie --}}
     <section class="container-fluid mb-5 bg_categories">
 

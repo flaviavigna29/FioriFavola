@@ -69,7 +69,7 @@
                             </p>
                         </div>
                         <div class="mb-3">
-                            <textarea name="body" class="form-control search_" cols="30" rows="10" maxlength="10000"
+                            <textarea name="body" class="form-control search_" cols="30" rows="10"
                                 placeholder="Testo descrittivo dell'articolo">{{ old('body') }}</textarea>
                             <p class="text-danger text-center fw-bold pt-2">
                                 @error('body')

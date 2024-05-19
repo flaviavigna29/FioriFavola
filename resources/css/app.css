@@ -2,143 +2,28 @@
 
 @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
 
-@import 'article.css';
-
-@import 'contacts.css';
-
-@import 'history.css';
-
-@import 'homepage.css';
-
-@import 'newsletter.css';
-
-@import 'review.css';
+@import 'global.css';
 
 @import 'navbar.css';
 
 @import 'footer.css';
 
+@import 'search.css';
 
+@import 'homepage.css';
 
+@import 'history.css';
 
-/*? STILI PRINCIPALI */
-* {
-    font-family: "Roboto Serif", serif;
-}
+@import 'contacts.css';
 
-/* Variabili per i colori */
-:root {
-    --light-color: #66b100;
-    --bottle-color: #056804;
-    --green-color: #003d0099;
-}
+@import 'newsletter.css';
 
-/* Testo principale */
-.font-tit {
-    font-family: "Autour One", system-ui;
-}
+@import 'review.css';
 
-/* Testo corsivo */
-.font-cit {
-    font-family: "Great Vibes", cursive;
-}
-
-/* Testo colorato di verde */
-.tx-bottle {
-    color: var(--bottle-color);
-}
-
-/*? STILI RIUTILIZZABILI */
-
-/* Immagini con ombra e bordo arrotondato */
-.img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5%;
-}
-
-/* Impostazione dello sfondo delle foglie */
-.sfondo {
-    background-image: url(../../public/media/assets/sfondo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Impostazione del search */
-.search_ {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: var(--bottle-color) 2px solid;
-}
-
-.search_:focus {
-    color: black;
-    background-color: #fff;
-    border-color: var(--light-color);
-    outline: 0;
-    box-shadow: 0 0 0 .1rem var(--light-color);
-}
-
-/* Pulsante di dimensioni ridotte */
-.button_ {
-    border: 2px var(--bottle-color) solid;
-    border-radius: 10px;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-style: italic;
-    font-size: small;
-    padding: 3px 4px;
-}
-
-.button_:hover {
-    background-color: var(--light-color);
-}
-
-/* Impostazione del testo con ombra */
-.text_shadow {
-    text-shadow: 2px 2px 5px #fff;
-}
-
-/* sfondo verde */
-.bg_green {
-    background-color: var(--bottle-color);
-}
-
-/* sfondo ombra */
-.col_shadow {
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-    border-radius: 15px;
-}
-
-.btn-search {
-    background-color: var(--bottle-color);
-    color: white;
-}
-
-.btn-search:hover {
-    background-color: var(--light-color);
-    color: white;
-    font-weight: bold;
-    transition: 0.8s;
-}
+@import 'article.css';
 
 
 
 
-/*! Media queries */
-/* da tablet in poi */
-@media screen and (min-width:992px) {
-    .card_categories {
-        width: 85%;
-        border: none;
-        border-radius: 25px;
-    }
-}
 
-/* schermi grandi */
-@media screen and (min-width:1200px) {
 
-    /* sfondo citazione */
-    .bg_cit {
-        background-image: url(../../public/media/assets/citazione.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-}

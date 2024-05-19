@@ -33,12 +33,11 @@
                       <ul class="dropdown-menu px-2">
                           @foreach ($categories as $category)
                               <li>
-                                <a class="dropdown-item font-tit d-flex justify-content-between mx-auto"
+                                  <a class="dropdown-item font-tit d-flex justify-content-between mx-auto"
                                       href="{{ route('article.index', compact('category')) }}">
-                                 <p class="me-3">{{ $category->name }}</p>
-                                      
+                                      <p class="me-3">{{ $category->name }}</p>
                                       <span>{{ $category->articles->count() }}</span>
-                                    </a>
+                                  </a>
                               </li>
                           @endforeach
                       </ul>
@@ -58,7 +57,7 @@
               </ul>
 
               <!-- Form di ricerca -->
-              <div class="input-group me-md-5 my-1 my-lg-0 d-none d-md-block">
+              <div class="input-group me-md-5 my-1 my-lg-0 d-search">
                   <form action="{{ route('article.search') }}" method="GET" role="search" class="d-flex">
                       <input name="searched" type="search" class="form-control search_ w-75"
                           placeholder='es. "Kenzia, "Venus Flytrap", ...' aria-label="Search"
@@ -88,9 +87,12 @@
                               <li>
                                   <form method="POST" action="{{ route('logout') }}">
                                       @csrf
-                                      <button class="dropdown-item font-tit" href="#">Logout</button>
+                                      <button class="dropdown-item font-tit d-flex justify-content-between"
+                                          href="#"><i class="bi bi-box-arrow-left text-danger"></i>Logout </button>
                                   </form>
                               </li>
+                              <li><a class="dropdown-item font-tit d-flex justify-content-between" href="{{route('shop')}}">
+                                      <i class="bi bi-bag-heart"></i> Carrello </a></li>
                           @endauth
                       </ul>
                   </div>
@@ -118,7 +120,8 @@
                                   @csrf
                                   <div class="mb-3">
                                       <label for="email" class="form-label small">Email</label>
-                                      <input type="email" name="email" class="form-control search_" id="email">
+                                      <input type="email" name="email" class="form-control search_"
+                                          id="email">
                                   </div>
 
                                   <div class="mb-3">

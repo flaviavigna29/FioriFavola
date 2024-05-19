@@ -4,7 +4,7 @@
 
             <div class="col-12 my-5">
 
-                <h2 class="display-6 text-center tx-bottle font-tit my-2">Risultati della tua ricerca:</h2>
+                <h2 class="display-6 text-center tx-bottle font-tit my-2">Risultati della tua ricerca: {{$articles->count()}} con la parola {{ucfirst($word)}}</h2>
                 <div class="row justify-content-center mt-2">
                     <x-display-message />
                 </div>

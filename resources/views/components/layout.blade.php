@@ -22,6 +22,8 @@
 
     <x-navbar />
 
+    <x-search />
+
     {{ $slot }}
 
     <x-footer />

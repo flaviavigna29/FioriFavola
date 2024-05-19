@@ -18,4 +18,9 @@ class PublicController extends Controller
         return view('prova');
     }
 
+    public function shop(){
+        return view('shop');
+    }
+
+    
 }
