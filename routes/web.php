@@ -2,6 +2,7 @@
 
 use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShopController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ArticleController;
@@ -14,8 +15,8 @@ use App\Http\Controllers\NewsletterController;
 // Rotta per la pagina della storia
 Route::get('/history', [PublicController::class, 'history'])-> name('storia');
 
-// Rotta per la pagina del carrello
-Route::get('/shop', [PublicController::class, 'shop'])-> name('shop');
+// Rotta per la pagina della wishlist
+Route::get('/wishlist', [PublicController::class, 'wishlist'])-> name('wishlist');
 
 // Rotta per la pagina del contattaci
 Route::get('/contacts', [ContactController::class, 'contacts'])-> name('contatti');
@@ -41,8 +42,6 @@ Route::get('/article/index/{category}', [ArticleController::class, 'index'])->na
 
 Route::get('/article/all', [ArticleController::class, 'all'])->name('article.all');
 
-Route::get('/article/show/{article}', [ArticleController::class, 'show'])-> name('article.show');
-
 Route::get('/article/edit/{article}', [ArticleController::class, 'edit'])->name('article.edit')->middleware('isAdmin');
 
 Route::put('/article/update/{article}', [ArticleController::class, 'update'])->name('article.update')->middleware('isAdmin');
@@ -50,3 +49,4 @@ Route::put('/article/update/{article}', [ArticleController::class, 'update'])->n
 Route::delete('/article/delete/{article}', [ArticleController::class, 'destroy'])->name('article.destroy')->middleware('isAdmin');
 
 Route::get('/article/search', [ArticleController::class, 'searchArticles'])->name('article.search');
+

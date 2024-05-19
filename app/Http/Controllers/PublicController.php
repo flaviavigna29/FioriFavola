@@ -14,13 +14,8 @@ class PublicController extends Controller
         return view('history');
     }
 
-    public function prova(){
-        return view('prova');
+    public function wishlist(){
+        return view('wishlist');
     }
 
-    public function shop(){
-        return view('shop');
-    }
-
-    
 }

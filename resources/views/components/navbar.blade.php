@@ -91,8 +91,8 @@
                                           href="#"><i class="bi bi-box-arrow-left text-danger"></i>Logout </button>
                                   </form>
                               </li>
-                              <li><a class="dropdown-item font-tit d-flex justify-content-between" href="{{route('shop')}}">
-                                      <i class="bi bi-bag-heart"></i> Carrello </a></li>
+                              <li><a class="dropdown-item font-tit d-flex justify-content-between" href="{{route('wishlist')}}">
+                                      <i class="bi bi-heart-fill tx-bottle"></i> Wishlist </a></li>
                           @endauth
                       </ul>
                   </div>
@@ -101,7 +101,6 @@
       </div>
   </nav>
   <!-- Fine Navbar -->
-
 
   <!-- Accedi Modale -->
   <div class="modal fade sfondo" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -192,7 +191,6 @@
       </div>
   </div>
   <!-- Fine Accedi Modale -->
-
 
   <!-- JS NAVBAR -->
   <script>

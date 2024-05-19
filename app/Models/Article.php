@@ -18,7 +18,8 @@ class Article extends Model
         'description',
         'subtitle',
         'body',
-        'category_id'
+        'category_id',
+        'wishlist_id'
     ];
 
     public function toSearchableArray()
@@ -39,5 +40,10 @@ class Article extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function wishlists()
+    {
+        return $this->belongsToMany(Wishlist::class, 'article_wishlist');
     }
 }

@@ -45,11 +45,6 @@ class ArticleController extends Controller
         return redirect()->back()->with('message', 'Articolo inserito');
     }
 
-    public function show(Article $article)
-    {
-        return view('article.show', compact('article'));
-    }
-
     public function edit(Article $article)
     {
         return view('article.edit', compact('article'));
