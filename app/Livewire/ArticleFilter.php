@@ -4,33 +4,37 @@ namespace App\Livewire;
 
 use App\Models\Article;
 use Livewire\Component;
+use App\Models\Category;
 
 class ArticleFilter extends Component
 {
-    // public $category;
-    // public $price;
-    // public $name;
+    public function OrderByPriceAsc()
+    {
+        $this->dispatch('OrderByPriceAsc');
+    }
 
-    // public function render()
-    // {
-    //     $articles = Article::where('category', $category)->get();
+    public function OrderByPriceDesc()
+    {
+        $this->dispatch('OrderByPriceDesc');
+    }
 
-    //     if ($this->category) {
-    //         $articles->where('category', $this->category);
-    //     }
+    public function OrderByTitleAsc()
+    {
+        $this->dispatch('OrderByTitleAsc');
+    }
 
-    //     if ($this->price) {
-    //         $articles->where('price', '<=', $this->price);
-    //     }
+    public function OrderByTitleDesc()
+    {
+        $this->dispatch('OrderByTitleDesc');
+    }
 
-    //     if ($this->name) {
-    //         $articles->where('name', 'like', '%' . $this->name . '%');
-    //     }
+    public function resetOrder()
+    {
+        $this->dispatch('resetOrder');
+    }
 
-    //     $articles = $articles->get();
-        
-    //     return view('livewire.article-filter', [
-    //         'articles' => $articles
-    //     ]);
-    // }
+    public function render()
+    {
+        return view('livewire.article-filter');
+    }
 }

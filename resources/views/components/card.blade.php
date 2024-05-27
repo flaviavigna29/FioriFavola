@@ -1,5 +1,8 @@
-<div class="cardArticles h-100 position-relative">
+<div class="cardArticles h-100 position-relative" 
+{{-- data-aos="flip-left" data-aos-delay="400" data-aos-duration="900" --}}
+>
     {{ $slot }}
+
     <div class="overflow-hidden">
         <img src="{{ Storage::url($article->img) }}" class="img-card card-img-top" alt="...">
     </div>
@@ -12,8 +15,9 @@
         <div>
             <div class="d-flex justify-content-between tx-bottle">
                 <button type="button" class="border-0 bg-transparent" data-bs-toggle="modal"
-                    data-bs-target="#article{{ $article->id }}"><i
-                        class="bi bi-info-circle-fill fs-4 tx-bottle"></i></button>
+                    data-bs-target="#article{{ $article->id }}">
+                    <i class="bi bi-info-circle-fill fs-4 tx-bottle"></i>
+                </button>
 
                 @if (Auth::check() && Auth::user()->is_admin)
                     <a href="{{ route('article.edit', compact('article')) }}"><i

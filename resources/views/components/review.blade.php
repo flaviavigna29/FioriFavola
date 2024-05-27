@@ -1,4 +1,5 @@
-<div class="container py-5 h-100">
+<div class="container py-5 h-100" data-aos="zoom-in"
+data-aos-delay="200" data-aos-duration="1000">
 
     <div class="row my-4 justify-content-center align-items-center h-100 py-4 rounded-5"
         style="background-color:#cec0aae0; border:var(--bottle-color) 2px solid">

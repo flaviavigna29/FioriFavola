@@ -18,6 +18,11 @@
     top: 120px;
 }
 
+.position-sticky-2 {
+    position: sticky;
+    top: 200px;
+}
+
 .card_index:hover {
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.8s;
@@ -46,6 +51,17 @@
     color: red !important;
 }
 
+.btn-article {
+    background-color: var(--bottle-color);
+    color: white;
+}
+
+.btn-article:hover {
+    background-color: var(--light-color);
+    color: white;
+    border: solid 1px var(--bottle-color);
+    transition: 0.5s;
+}
 
 /* PAGINA ARTICOLI SHOW */
 .header_article {

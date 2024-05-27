@@ -10,7 +10,7 @@
     {{-- CARD ARTICOLI --}}
     <div class="col-12">
         <div class="container">
-            <div class="row justify-content-around" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
+            <div class="row justify-content-around">
                 {{-- @dd($articles) --}}
                 @foreach ($articles as $article)
                     <div class="col-11 col-md-4 col-lg-3 mb-3">

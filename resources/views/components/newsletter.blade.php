@@ -1,4 +1,5 @@
-<div class="container py-3 h-100" id="newsletter">
+<div class="container py-3 h-100" id="newsletter" data-aos="zoom-in"
+data-aos-delay="200" data-aos-duration="1000">
 
     <div class="row my-5 bg_green justify-content-center h-100 py-4 rounded-5">
         <div class="col-10 col-md-8 my-5 text-center text-white lead">

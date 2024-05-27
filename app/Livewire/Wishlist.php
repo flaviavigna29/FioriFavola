@@ -14,7 +14,11 @@ class Wishlist extends Component
 
     public function mount()
     {
-        $this->wishlist = Auth::user()->wishlist->load('articles');
+        if (Auth::user()->wishlist === NULL) {
+            return redirect('/')->with('message', 'Non hai articoli nella wishlist');
+        } else {
+            $this->wishlist = Auth::user()->wishlist->load('articles');
+        }
     }
 
     public function refreshWishlist()

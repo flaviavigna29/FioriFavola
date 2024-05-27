@@ -58,9 +58,9 @@
     border-top: none;
     border-bottom: none;
     font-weight: bold;
-    font-size: large;
-    text-transform: uppercase;
-    transition: 0.7s;
+    /* font-size: large; */
+    /* text-transform: uppercase; */
+    transition: 0.5s;
 }
 
 .bi:hover {

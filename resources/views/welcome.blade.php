@@ -2,11 +2,10 @@
     {{-- ! Header  --}}
     <header class="container-fluid position-relative header_home">
         <div class="row justify-content-center">
-            <x-display-errors />
-            <x-display-message />
-        </div>
-
-        <div class="row justify-content-center">
+            <div class="row justify-content-center mt-5 pt-5">
+                <x-display-errors />
+                <x-display-message />
+            </div>
             <div class="col-12 col-md-8 position-absolute header_position">
                 <p class="display-5 text-center font-tit fw-bolder tx-bottle text_shadow mb-4" data-aos="fade-up"
                     data-aos-delay="200" data-aos-duration="1000">In cerca della pianta perfetta?</p>
@@ -35,6 +34,8 @@
             </div>
         </div>
     </div>
+
+
     
     {{-- ! Sezione Categorie --}}
     <section class="container-fluid mb-5 bg_categories">

@@ -1,19 +1,19 @@
-{{-- <div>
-    <input type="text" wire:model="name" placeholder="Search by name...">
-    <select wire:model="category">
-        <option value="">Select Category</option>
-        <option value="category1">Category 1</option>
-        <option value="category2">Category 2</option>
-    </select>
-    <select wire:model="price">
-        <option value="">Select Price</option>
-        <option value="100">$100</option>
-        <option value="200">$200</option>
-    </select>
-
-    <ul>
-        @foreach ($articles as $article)
-            <li>{{ $article->name }} - {{ $article->price }} - {{ $article->category }}</li>
-        @endforeach
-    </ul>
-</div> --}}
+<div>
+    <div class="dropdown-center">
+        <button class="btn btn-article dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ordina per:
+        </button>
+        <ul class="dropdown-menu">
+            <li><button type="button" wire:click="OrderByPriceAsc" class="dropdown-item">Prezzo più basso</button></li>
+            <li><button type="button" wire:click="OrderByPriceDesc" class="dropdown-item">Prezzo
+                    più alto</button></li>
+            <li><button type="button" wire:click="OrderByTitleAsc" class="dropdown-item">Dalla A
+                    alla Z</button></li>
+            <li><button type="button" wire:click="OrderByTitleDesc" class="dropdown-item">Dalla Z
+                    alla A</button>
+            </li>
+            <li><button type="button" wire:click="resetOrder" class="dropdown-item">Reset</button>
+            </li>
+        </ul>
+    </div>
+</div>

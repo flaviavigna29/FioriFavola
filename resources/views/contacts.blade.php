@@ -10,8 +10,7 @@
             </div>
             <div class="row justify-content-evenly">
                 <!-- sezione contatti -->
-                <div class="col-12 col-lg-5 bordo_contacts bg-white" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
-                    data-aos-delay="50" data-aos-duration="200" data-aos-offset="0">
+                <div class="col-12 col-lg-5 bordo_contacts bg-white">
 
                     <!-- contatti -->
                     <div class="mb-4">
@@ -111,9 +110,7 @@
                     </form>
                 </div>
                 <!-- mappa -->
-                <div class="d-none d-lg-block col-lg-5 justify-content-center align-items-center text-center"
-                    data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-duration="200"
-                    data-aos-offset="0">
+                <div class="d-none d-lg-block col-lg-5 justify-content-center align-items-center text-center">
                     <iframe class="iframe mappa"
                         src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d9958.597307069344!2d12.270075578602107!3d42.09229061044421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e2!4m0!4m3!3m2!1d42.0891362!2d12.272125599999999!5e0!3m2!1sit!2sit!4v1710969637218!5m2!1sit!2sit"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

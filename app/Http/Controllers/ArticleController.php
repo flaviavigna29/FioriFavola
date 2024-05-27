@@ -18,11 +18,9 @@ class ArticleController extends Controller
     }
 
     // Pagina di visualizzazione di tutti gli articoli
-    public function all(Request $request)
+    public function all()
     {
-        $articles = Article::all();
-        return view('article.all', compact('articles'));
-
+        return view('article.all');
     }
   
     public function create()

@@ -2,7 +2,8 @@
     {{-- Header --}}
     <header class="container-fluid header_history d-flex justify-content-center align-items-center">
         <div class="row text-center">
-            <h2 class="font-cit fw-bold tx-bottle title_history">Chi siamo</h2>
+            <h2 class="font-cit fw-bold tx-bottle title_history" data-aos="fade-up"
+            data-aos-delay="200" data-aos-duration="1000">Chi siamo</h2>
         </div>
     </header>
     {{-- Fine Header --}}
@@ -10,7 +11,7 @@
     <section class="container my-5 pb-5">
 
         {{-- Intestazione --}}
-        <div class="row mb-5 bg_green justify-content-center">
+        <div class="row mb-5 bg_green justify-content-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
             <div class="col-11 col-md-8 my-5 text-center text-white lead">
                 <p>Benvenuti in <span class="fw-bold">Fiori Favola</span>
                     , un'azienda fondata da <span class="fw-bold">Annalisa</span> e <span class="fw-bold">Fabrizio</span>,
@@ -23,14 +24,14 @@
         </div>
 
         {{-- Titolo 2 --}}
-        <div class="row text-center mb-5 justify-content-center">
+        <div class="row text-center mb-5 justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div class="col-12">
                 <h2 class="font-cit fw-bold tx-bottle title_history">La nostra storia</h2>
             </div>
         </div>
 
         {{-- foto 1 --}}
-        <div class="row justify-content-evenly align-items-center mb-5 bg_green">
+        <div class="row justify-content-evenly align-items-center mb-5 bg_green" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
             <div class="col-12 col-lg-6 text-center text-white rounded p-5 order-2 order-lg-1">
                 <p class="lead">Nel cuore della nostra città, cinque anni fa, Annalisa e Fabrizio hanno dato vita a
                     un sogno verde: Fiori Favola. Il 6 aprile del 2019, le nostre porte si sono spalancate per
@@ -42,7 +43,7 @@
         </div>
 
         {{-- foto 2 --}}
-        <div class="row justify-content-evenly align-items-center mb-5 bg_green">
+        <div class="row justify-content-evenly align-items-center mb-5 bg_green" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div class="col-12 col-lg-6 m-0 p-0 bg_history_2 "></div>
             <div class="col-12 col-lg-6 text-center text-white rounded p-5 ">
                 <p class="lead">Tra le mura di Fiori Favola, ogni pianta è un tesoro da scoprire. Da esotiche
@@ -54,7 +55,7 @@
         </div>
 
         {{-- foto 3 --}}
-        <div class="row justify-content-evenly align-items-center mb-5 bg_green">
+        <div class="row justify-content-evenly align-items-center mb-5 bg_green" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div class="col-12 col-lg-6 text-center text-white rounded p-5 order-2 order-lg-1">
                 <p class="lead">Da Fiori Favola, non solo vendiamo piante, coltiviamo relazioni. Nei nostri workshop
                     e
@@ -67,13 +68,13 @@
 
         {{-- Titolo 3 --}}
         <div class="row text-center mb-5 justify-content-center">
-            <div class="col-12">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <h2 class="font-cit fw-bold tx-bottle title_history">Il nostro scopo</h2>
             </div>
         </div>
 
         {{-- foto 4 --}}
-        <div class="row justify-content-evenly align-items-center mb-5">
+        <div class="row justify-content-evenly align-items-center mb-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             <div class="col-12 col-lg-6 text-center text-white rounded p-5 bg_green order-2 order-lg-1">
                 <p class="lead">Il nostro scopo è ispirare e aiutare le persone a creare giardini e spazi verdi che
                     riflettano la loro personalità e che portino gioia nelle loro vite. Vogliamo essere il vostro
@@ -84,4 +85,5 @@
             <div class="col-12 col-lg-6 m-0 p-0 bg_history_4 order-1 order-lg-2 "></div>
         </div>
     </section>
+
 </x-layout>

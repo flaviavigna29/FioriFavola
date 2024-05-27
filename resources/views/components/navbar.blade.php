@@ -73,7 +73,7 @@
                   <div class="nav-item my-1 my-lg-0 dropdown">
                       <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           @guest<i class="bi bi-person-hearts tx-bottle"></i>@endguest
-                          @auth <p class="dropdown-item font-tit tx-bottle m-0 fs-5 ">Ciao, {{ Auth::user()->name }}</p>
+                          @auth <p class="dropdown-item tx-bottle m-0 fs-6 nav-link fw-bold">Ciao, {{ Auth::user()->name }}</p>
                           @endauth
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end">

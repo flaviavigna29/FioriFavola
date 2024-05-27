@@ -14,9 +14,9 @@
     </div>
 @endif
 
-<script>
+{{-- <script>
     let message = document.querySelector('#flash-message')
     setTimeout(() => {
         message.remove()
     }, 4000);
-</script>
+</script> --}}

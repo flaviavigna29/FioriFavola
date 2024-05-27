@@ -11,7 +11,7 @@
                             <a href="https://maps.app.goo.gl/pTLGZJ3f85t4iphEA" class="text-decoration-none text-reset"
                                 target="_blank">
                                 <i class="bi bi-geo-alt-fill me-2"></i>
-                                <span class="text-footer">Via di S. Francesco, 79 - Anguillara S. - RM</span>
+                                <span class="text-footer">Via di S. Francesco, 79 - Anguillara S.</span>
                             </a>
                         </li>
                         <li class="my-2">
