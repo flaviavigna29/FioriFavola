@@ -11,7 +11,7 @@ data-aos-delay="200" data-aos-duration="1000">
             <h3 class="text-white fw-bold mb-5">Registrati alla nostra Newsletter!</h3>
             <form method="POST" action="{{route('newsletter')}}" class="my-3 d-flex">
                 @csrf
-                <input type="email" name="email" class="form-control py-3 mx-2 bg-transparent search_newsletter" id="email" value="{{old('email')}}"
+                <input type="email" name="email" class="form-control py-3 mx-2 bg-transparent search_newsletter text-white custom-placeholder" id="email" value="{{old('email')}}"
                     placeholder="Inserisci la tua e-mail">
                 <button class="btn btn-outline-light py-3 fw-bold mx-2 btn_newsletter"><small>Invia</small></button>
             </form>
@@ -22,3 +22,4 @@ data-aos-delay="200" data-aos-duration="1000">
     </div>
 
 </div>
+

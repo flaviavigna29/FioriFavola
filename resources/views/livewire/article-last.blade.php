@@ -1,7 +1,7 @@
-<div class="container my-5">
+<div class="container-fluid my-5">
     <div class="row justify-content-center align-items-center ">
         <div class="col-12 my-5">
-            <h3 class="h1 text-center font-tit tx-bottle" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
+            <h3 class="h1 text-center font-tit tx-bottle" >
                 Gli ultimi arrivi!</h3>
         </div>
     </div>
